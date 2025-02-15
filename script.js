@@ -66,7 +66,9 @@ function displayWeapons(data) {
             <td class="small-column">${createNumericInput(weapon.Buy, index, 'Buy', !isEditable)}</td>
             <td class="small-column">${createNumericInput(weapon.Sell, index, 'Sell', !isEditable)}</td>
             <td class="small-column">${createDropdown(weaponTypes, weapon.Type || 'N/A', index, 'Type', !isEditable)}</td>
-            <td class="small-column"><button onclick="toggleEditRow(${index})">${isEditable ? 'Save' : 'Edit'}</button></td>
+            <td class="small-column">
+                <button class="edit-btn" onclick="toggleEditRow(${index})">${isEditable ? '✔ Save' : '✏ Edit'}</button>
+            </td>
         </tr>`;
         tableBody.innerHTML += row;
     });
