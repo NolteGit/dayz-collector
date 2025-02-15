@@ -89,6 +89,8 @@ table {
     border-collapse: collapse;
     background: rgba(0, 0, 0, 0.8);
     color: white;
+    font-family: "Roboto", sans-serif; /* Modern and clean */
+    font-size: 14px;
 }
 
 th, td {
@@ -100,9 +102,11 @@ th, td {
 }
 
 th {
-    background: rgba(50, 50, 50, 0.8); /* Darker background for header */
+    font-family: "Oswald", Impact, sans-serif; /* Military-style fonts */
     font-weight: bold;
-
+    font-size: 18px; /* Slightly bigger */
+    text-transform: uppercase; /* Makes headers all caps */
+    letter-spacing: 1px; /* Adds slight spacing */
 }
 
 h2 {
@@ -114,6 +118,10 @@ h2 {
 }
 
 .weapon-column {
+    font-family: "Orbitron", "Exo 2", sans-serif; /* Futuristic/military feel */
+    font-weight: bold;
+    font-size: 16px;
+    color: #f1c40f; /* Gold-like color for visibility */
     width: 20%;
 }
 
@@ -136,10 +144,3 @@ input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-
-.storage-yes { background-color: #388e3c; } /* Green */
-.storage-no { background-color: #d32f2f; } /* Red */
-
-.mag-0 { background-color: #d32f2f; } /* Red */
-.mag-1 { background-color: #ffeb3b; }
-.mag-2 { background-color: #388e3c; } /* Green */

@@ -30,14 +30,21 @@ async function loadWeapons() {
 
 function getDropdownColor(field, value) {
     const colors = {
-        "1": "background-color: #757575; color: white;",  // Gray for low noise
-        "2": "background-color: #4caf50; color: white;",  // Solid green
+        // Noise Levels
+        "1": "background-color: #4caf50; color: white;",  // Gray
+        "2": "background-color:rgb(133, 173, 87); color: white;",  // Green
         "3": "background-color: #ffeb3b; color: black;",  // Yellow
         "4": "background-color: #ff9800; color: black;",  // Orange
-        "5": "background-color: #d32f2f; color: white;",  // Strong red
-        "Yes": "background-color: #388e3c; color: white;", // Green
-        "No": "background-color: #d32f2f; color: white;",  // Red
-        "0": "background-color: #bdbdbd; color: white;"  // Light gray
+        "5": "background-color: #d32f2f; color: white;",  // Red
+
+        // Storage Status
+        "Yes": "background-color: #388e3c; color: white;", // Green (Stored)
+        "No": "background-color: #d32f2f; color: white;",  // Red (Not Stored)
+
+        // Magazine Count
+        "0": "background-color: #d32f2f; color: white;",  // Red (No Magazines)
+        "1": "background-color: #ffeb3b; color: black;",  // Yellow (One Magazine)
+        "2": "background-color: #388e3c; color: white;"   // Green (Two Magazines)
     };
 
     return colors[value] || "";
