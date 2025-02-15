@@ -84,7 +84,7 @@ body, html {
 }
 
 table {
-    width: 90%;
+    width: 80%;
     margin: auto;
     border-collapse: collapse;
     background: rgba(0, 0, 0, 0.8);
@@ -162,25 +162,28 @@ input[type="number"]::-webkit-inner-spin-button {
     flex-grow: 1;
 }
 
-/* Reduce width of the Edit column */
+/* Make the edit column smaller */
 .edit-column {
-    text-align: right;
-    width: 40px; /* Reduce column width */
-    padding: 5px; /* Adjust padding */
+    text-align: center;
+    width: 30px !important; /* Force a smaller width */
+    min-width: 30px;
+    max-width: 40px;
+    padding: 2px;
 }
 
-/* Compact Edit Button */
 .edit-btn {
-    background-color: #f1c40f; /* Yellow button */
+    background-color: #f1c40f;
     color: black;
     border: none;
-    padding: 4px 6px; /* Smaller padding */
-    font-size: 12px; /* Reduce font size */
+    padding: 3px 5px; /* Smaller padding */
+    font-size: 12px; /* Smaller text */
     cursor: pointer;
     border-radius: 4px;
+    width: 100%; /* Ensures button fits inside small column */
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 /* Hover effect */
