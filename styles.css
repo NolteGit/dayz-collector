@@ -1,9 +1,7 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    text-align: center;
-    background: url('images/background.png') no-repeat center center fixed;
-    background-size: cover;
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents any horizontal scrolling issues */
 }
 
 .table-container {
@@ -16,24 +14,30 @@ body {
 
 #header {
     width: 100%;
-    height: 30vh; /* 30% of the viewport height */
+    height: 30vh;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background: none; /* Remove any background */
+    background: none; /* Remove any solid background */
+    padding: 0; /* Remove any padding that might cause extra spacing */
+    border: none; /* Ensure there's no border */
 }
 
 #header-img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures it fills the space properly */
+    object-fit: cover; /* Ensures image scales correctly */
+    display: block; /* Removes any extra spacing from inline display */
+    margin: 0;
+    padding: 0;
+    border: none; /* Make sure no border exists */
 }
 
 #search-container {
     position: absolute;
-    bottom: 5%; /* Places it near the bottom of the header */
+    bottom: 5%; /* Keeps it inside the image */
     width: 50%;
     display: flex;
     justify-content: center;
