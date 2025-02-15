@@ -7,29 +7,36 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- HEADER IMAGE CONTAINER -->
     <div id="header">
-        <h2>DayZ Weapon Collection Tracker</h2>
+        <img src="images/header.png" id="header-img" alt="DayZ Weapon Collection Tracker">
+        <div id="search-container">
+            <input type="text" id="search" placeholder="Search for a weapon..." onkeyup="searchWeapons()">
+        </div>
     </div>
     <div id="search-container">
         <input type="text" id="search" placeholder="Search for a weapon..." onkeyup="searchWeapons()">
     </div>
-    <table>
-        <thead>
-            <tr>
-                <th class="weapon-column">Weapon</th>
-                <th class="small-column">Ammo Type</th>
-                <th class="small-column">Noise</th>
-                <th class="small-column">Storage</th>
-                <th class="small-column">Magazines</th>
-                <th class="small-column">Buy Price</th>
-                <th class="small-column">Sell Price</th>
-                <th class="small-column">Type</th>
-            </tr>
-        </thead>
-        <tbody id="weaponTable">
-            <!-- Weapons will be populated here -->
-        </tbody>
-    </table>
+    <div id="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th class="weapon-column">Weapon</th>
+                    <th class="small-column">Ammo Type</th>
+                    <th class="small-column">Noise</th>
+                    <th class="small-column">Storage</th>
+                    <th class="small-column">Magazines</th>
+                    <th class="small-column">Buy Price</th>
+                    <th class="small-column">Sell Price</th>
+                    <th class="small-column">Type</th>
+                </tr>
+            </thead>
+            <tbody id="weaponTable">
+                <!-- Weapons will be populated here -->
+            </tbody>
+        </table>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

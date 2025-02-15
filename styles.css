@@ -15,41 +15,53 @@ body {
 }
 
 #header {
-    background: black; /* Solid black band */
-    color: #f1c40f;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Subtle shadow for visibility */
-    padding: 8px 0; /* Reduce padding to make it more compact */
-    font-size: 32px; /* Keep the text readable */
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-align: center;
+    width: 100%;
+    height: 30vh; /* Takes up 30% of the viewport height */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#header-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures it fills the space properly */
 }
 
 #search-container {
+    position: absolute;
+    bottom: 5%; /* Places it near the bottom of the header */
+    width: 50%;
     display: flex;
     justify-content: center;
-    margin-bottom: -5px;
-    background: #222; /* Dark gray instead of transparent */
-    padding: 15px;
-    border-radius: 5px;
 }
 
 #search {
-    background: #222; /* Darker input background */
-    color: white;
-    border: 1px solid #ccc;
-    width: 50%; /* Bigger size */
+    width: 80%;
     padding: 15px;
-    box-shadow: 0px 0px 10px rgba(241, 196, 15, 0.6); /* Soft glow effect */
     font-size: 18px;
+    border: 2px solid #f1c40f;
     border-radius: 10px;
-    border: 1px solid #ccc;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    box-shadow: 0px 0px 10px rgba(241, 196, 15, 0.6);
     text-align: center;
+}
+
+#table-container {
+    width: 100%;
+    height: 70vh; /* Bottom 70% of the viewport */
+    background: url('images/background.png') no-repeat center center fixed;
+    background-size: cover;
+    padding: 20px;
+    overflow-y: auto; /* Allows scrolling if table overflows */
 }
 
 #search:focus {
     outline: none;
-    box-shadow: 0px 0px 15px rgba(241, 196, 15, 1); /* Stronger glow effect */
+    box-shadow: 0px 0px 15px rgba(241, 196, 15, 1);
     border: 2px solid white;
 }
 
@@ -57,15 +69,14 @@ table {
     width: 90%;
     margin: auto;
     border-collapse: collapse;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    background: rgba(0, 0, 0, 0.8); /* Increased opacity for better readability */
+    background: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
     color: white;
 }
 
 th, td {
     text-align: center;
     font-size: 16px; /* Increase readability */
-    padding: 10px; /* More padding for better spacing */
+    padding: 8px; /* More padding for better spacing */
     background: rgba(20, 20, 20, 0.9); /* Darker background for better text contrast */
     border: 1px solid rgba(255, 255, 255, 0.4); /* Lighter borders */
     box-shadow: 0 1px 3px rgba(255, 255, 255, 0.1); /* Soft glow effect */
