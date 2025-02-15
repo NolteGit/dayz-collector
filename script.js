@@ -30,17 +30,16 @@ async function loadWeapons() {
 
 function getDropdownColor(field, value) {
     const colors = {
-        "1": "background-color: #d4edda;", // Green
-        "2": "background-color: #c3e6cb;",
+        "1": "background-color: #d4edda;", // Light Green
+        "2": "background-color: #a8df8e;", // Medium Green (NEW)
         "3": "background-color: #ffeeba;", // Yellow
-        "4": "background-color: #f5c6cb;",
-        "5": "background-color: #f8d7da;", // Red
-        "Yes": "background-color: #d4edda;",
-        "No": "background-color: #f8d7da;",
-        "2": "background-color: #d4edda;",
-        "1": "background-color: #ffeeba;",
-        "0": "background-color: #f8d7da;"
+        "4": "background-color: #ffcccb;", // Light Red (NEW)
+        "5": "background-color: #f8d7da;", // Stronger Red
+        "Yes": "background-color: #d4edda;", // Green
+        "No": "background-color: #f8d7da;", // Red
+        "0": "background-color: #f8d7da;" // Red for zero values
     };
+
     return colors[value] || "";
 }
 
