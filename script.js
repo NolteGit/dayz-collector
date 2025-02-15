@@ -92,11 +92,13 @@ function displayWeapons(data) {
         row.appendChild(createNumericInput(weapon.Buy, index, 'Buy', !isEditable));
         row.appendChild(createNumericInput(weapon.Sell, index, 'Sell', !isEditable));
         row.appendChild(createDropdown(weaponTypes, weapon.Type || 'N/A', index, 'Type', !isEditable));
+        row.appendChild(createDropdown(ratingOptions, weapon.Rating || 'N/A', index, 'Rating', !isEditable));
         
         let editTd = document.createElement("td");
+        editTd.style.width = "50px";
         let editButton = document.createElement("button");
         editButton.className = "edit-btn";
-        editButton.textContent = isEditable ? "✔ Save" : "✏ Edit";
+        editButton.textContent = isEditable ? "✔" : "✏";
         editButton.onclick = () => toggleEditRow(index);
         editTd.appendChild(editButton);
         row.appendChild(editTd);
