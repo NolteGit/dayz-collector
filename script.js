@@ -16,61 +16,73 @@ async function loadWeapons() {
         weaponsData = await response.json();
         localStorage.setItem("weaponsData", JSON.stringify(weaponsData));
     }
-    displayWeapons(weaponsData);
+    displayWeapons();
 }
 
 function createDropdown(options, selectedValue, index, field, disabled) {
-    let select = `<select class="dropdown ${field}" onchange="markRowAsEdited(${index}, '${field}', this.value)" style="${getDropdownColor(field, selectedValue)}" ${disabled ? 'disabled' : ''}>`;
+    let select = document.createElement("select");
+    select.className = `dropdown ${field}`;
+    select.onchange = () => markRowAsEdited(index, field, select.value);
+    select.disabled = disabled;
+    select.style = getDropdownColor(field, selectedValue);
+    
     options.forEach(option => {
-        select += `<option value="${option}" ${option === selectedValue ? 'selected' : ''}>${option}</option>`;
+        let optionElement = document.createElement("option");
+        optionElement.value = option;
+        optionElement.textContent = option;
+        if (option === selectedValue) optionElement.selected = true;
+        select.appendChild(optionElement);
     });
-    select += `</select>`;
     return select;
 }
 
 function getDropdownColor(field, value) {
-    if (field === "Noise") {
-        return value === "1" ? "background-color: #d4edda;" :
-               value === "2" ? "background-color: #c3e6cb;" :
-               value === "3" ? "background-color: #ffeeba;" :
-               value === "4" ? "background-color: #f5c6cb;" :
-               value === "5" ? "background-color: #f8d7da;" : "";
-    }
-    if (field === "Lager") {
-        return value === "Yes" ? "background-color: #d4edda;" :
-               value === "No" ? "background-color: #f8d7da;" : "";
-    }
-    if (field === "Mag") {
-        return value === "2" ? "background-color: #d4edda;" :
-               value === "1" ? "background-color: #ffeeba;" :
-               value === "0" ? "background-color: #f8d7da;" : "";
-    }
-    return "";
+    const colors = {
+        "1": "background-color: #d4edda;", // Green
+        "2": "background-color: #c3e6cb;",
+        "3": "background-color: #ffeeba;", // Yellow
+        "4": "background-color: #f5c6cb;",
+        "5": "background-color: #f8d7da;", // Red
+        "Yes": "background-color: #d4edda;",
+        "No": "background-color: #f8d7da;",
+        "2": "background-color: #d4edda;",
+        "1": "background-color: #ffeeba;",
+        "0": "background-color: #f8d7da;"
+    };
+    return colors[value] || "";
 }
 
 function createNumericInput(value, index, field, disabled) {
-    return `<input type="number" min="0" max="999999" value="${value || ''}" onchange="markRowAsEdited(${index}, '${field}', this.value)" ${disabled ? 'disabled' : ''}>`;
+    let input = document.createElement("input");
+    input.type = "number";
+    input.min = "0";
+    input.max = "999999";
+    input.value = value || "";
+    input.disabled = disabled;
+    input.onchange = () => markRowAsEdited(index, field, input.value);
+    return input;
 }
 
-function displayWeapons(data) {
+function displayWeapons() {
     const tableBody = document.getElementById("weaponTable");
     tableBody.innerHTML = "";
-    data.forEach((weapon, index) => {
+    weaponsData.forEach((weapon, index) => {
         let isEditable = editStates[index] || false;
-        let row = `<tr>
-            <td class="weapon-column">${weapon.Weapon}</td>
-            <td class="small-column">${createDropdown(ammoTypes, weapon.Ammo || 'N/A', index, 'Ammo', !isEditable)}</td>
-            <td class="small-column">${createDropdown(noiseLevels, weapon.Noise || 'N/A', index, 'Noise', !isEditable)}</td>
-            <td class="small-column">${createDropdown(storageOptions, weapon.Lager || 'N/A', index, 'Lager', !isEditable)}</td>
-            <td class="small-column">${createDropdown(magazineOptions, weapon.Mag || 'N/A', index, 'Mag', !isEditable)}</td>
-            <td class="small-column">${createNumericInput(weapon.Buy, index, 'Buy', !isEditable)}</td>
-            <td class="small-column">${createNumericInput(weapon.Sell, index, 'Sell', !isEditable)}</td>
-            <td class="small-column">${createDropdown(weaponTypes, weapon.Type || 'N/A', index, 'Type', !isEditable)}</td>
-            <td class="small-column">
-                <button class="edit-btn" onclick="toggleEditRow(${index})">${isEditable ? '✔ Save' : '✏ Edit'}</button>
-            </td>
-        </tr>`;
-        tableBody.innerHTML += row;
+        let row = document.createElement("tr");
+        row.innerHTML = `<td class='weapon-column'>${weapon.Weapon}</td>`;
+        row.appendChild(createDropdown(ammoTypes, weapon.Ammo || 'N/A', index, 'Ammo', !isEditable));
+        row.appendChild(createDropdown(noiseLevels, weapon.Noise || 'N/A', index, 'Noise', !isEditable));
+        row.appendChild(createDropdown(storageOptions, weapon.Lager || 'N/A', index, 'Lager', !isEditable));
+        row.appendChild(createDropdown(magazineOptions, weapon.Mag || 'N/A', index, 'Mag', !isEditable));
+        row.appendChild(createNumericInput(weapon.Buy, index, 'Buy', !isEditable));
+        row.appendChild(createNumericInput(weapon.Sell, index, 'Sell', !isEditable));
+        row.appendChild(createDropdown(weaponTypes, weapon.Type || 'N/A', index, 'Type', !isEditable));
+        let editButton = document.createElement("button");
+        editButton.className = "edit-btn";
+        editButton.textContent = isEditable ? "✔ Save" : "✏ Edit";
+        editButton.onclick = () => toggleEditRow(index);
+        row.appendChild(editButton);
+        tableBody.appendChild(row);
     });
 }
 
@@ -83,7 +95,7 @@ function toggleEditRow(index) {
         localStorage.setItem("weaponsData", JSON.stringify(weaponsData));
     }
     editStates[index] = !editStates[index];
-    displayWeapons(weaponsData);
+    displayWeapons();
 }
 
 function searchWeapons() {
