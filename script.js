@@ -72,6 +72,19 @@ function createDropdown(options, selectedValue, index, field, disabled) {
     return td;
 }
 
+function createNumericInput(value, index, field, disabled) {
+    let input = document.createElement("input");
+    input.type = "number";
+    input.min = "0";
+    input.max = "999999";
+    input.value = value || "";
+    input.disabled = disabled;
+    input.onchange = () => markRowAsEdited(index, field, input.value);
+    let td = document.createElement("td");
+    td.appendChild(input);
+    return td;
+}
+
 function displayWeapons(data) {
     console.time("displayWeapons");
     const tableBody = document.getElementById("weaponTable");
@@ -96,24 +109,23 @@ function displayWeapons(data) {
         row.appendChild(createDropdown(weaponTypes, weapon.Type || 'N/A', index, 'Type', !isEditable));
         row.appendChild(createDropdown(ratingOptions, weapon.Rating || 'N/A', index, 'Rating', !isEditable));
 
-        // ✅ Add Edit column using row.appendChild()
+        // Add a new Edit button column inside the row
         let editTd = document.createElement("td");
-        editTd.className = "small-column edit-column";
+        editTd.className = "edit-column";
 
         let editButton = document.createElement("button");
         editButton.className = "edit-btn";
-        editButton.textContent = isEditable ? "✔ Save" : "✏ Edit";
+        editButton.textContent = isEditable ? "Save ✔" : "Edit ✏";
         editButton.onclick = () => toggleEditRow(index);
 
         editTd.appendChild(editButton);
-        row.appendChild(editTd); // ✅ Append to the row here
+        row.appendChild(editTd);
 
-        tableBody.appendChild(row); // ✅ Add row to table body
+        tableBody.appendChild(row);
     });
 
     console.timeEnd("displayWeapons");
 }
-
 
 
 function markRowAsEdited(index, field, value) {
