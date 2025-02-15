@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- HEADER IMAGE CONTAINER -->
     <div id="header">
         <img src="images/header.png" id="header-img" alt="DayZ Weapon Collection Tracker">
+    </div>
+
+    <div id="search-section">
         <div id="search-container">
             <input type="text" id="search" placeholder="Search for a weapon..." onkeyup="searchWeapons()">
         </div>
     </div>
+
     <div id="table-container">
         <table>
             <thead>
@@ -26,6 +29,7 @@
                     <th class="small-column">Buy Price</th>
                     <th class="small-column">Sell Price</th>
                     <th class="small-column">Type</th>
+                    <th class="small-column">Rating</th>
                 </tr>
             </thead>
             <tbody id="weaponTable">
