@@ -115,7 +115,7 @@ function displayWeapons(data) {
 
         let editButton = document.createElement("button");
         editButton.className = "edit-btn";
-        editButton.textContent = isEditable ? "✔" : "✏";
+        editButton.textContent = isEditable ? "Save ✔" : "Edit ✏";
         editButton.onclick = () => toggleEditRow(index);
 
         editTd.appendChild(editButton);
