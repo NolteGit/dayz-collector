@@ -77,7 +77,7 @@ function displayWeapons(data) {
     data.forEach((weapon, index) => {
         let isEditable = editStates[index] || false;
         let row = document.createElement("tr");
-        row.innerHTML = `<td class='weapon-column'>${weapon.Weapon}</td>`;
+        row.innerHTML = `<td class='weapon-column' style='width: 150px;'>${weapon.Weapon}</td>`;
         row.appendChild(createDropdown(ammoTypes, weapon.Ammo || 'N/A', index, 'Ammo', !isEditable));
         row.appendChild(createDropdown(noiseLevels, weapon.Noise || 'N/A', index, 'Noise', !isEditable));
         row.appendChild(createDropdown(storageOptions, weapon.Lager || 'N/A', index, 'Lager', !isEditable));
