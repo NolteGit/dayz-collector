@@ -8,41 +8,57 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            text-align: center;
         }
-        input {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            font-size: 16px;
+        #search-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        #search {
+            width: 50%;
+            padding: 12px;
+            font-size: 18px;
+            border-radius: 25px;
+            border: 1px solid #ccc;
+            text-align: center;
         }
         table {
-            width: 100%;
+            width: 80%;
+            margin: auto;
             border-collapse: collapse;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
         th, td {
             border: 1px solid #ddd;
             padding: 8px;
-            text-align: left;
+            text-align: center;
+            font-size: 14px;
         }
         th {
             background-color: #f4f4f4;
+        }
+        .small-column {
+            width: 10%;
         }
     </style>
 </head>
 <body>
     <h2>DayZ Weapon Collection Tracker</h2>
-    <input type="text" id="search" placeholder="Search for a weapon..." onkeyup="searchWeapons()">
+    <div id="search-container">
+        <input type="text" id="search" placeholder="Search for a weapon..." onkeyup="searchWeapons()">
+    </div>
     <table>
         <thead>
             <tr>
                 <th>Weapon Name</th>
-                <th>Ammo Type</th>
-                <th>Noise</th>
-                <th>In Storage</th>
-                <th>Magazines</th>
-                <th>Buy Price</th>
-                <th>Sell Price</th>
-                <th>Type</th>
+                <th class="small-column">Ammo Type</th>
+                <th class="small-column">Noise</th>
+                <th class="small-column">Storage</th>
+                <th class="small-column">Magazines</th>
+                <th class="small-column">Buy Price</th>
+                <th class="small-column">Sell Price</th>
+                <th class="small-column">Type</th>
             </tr>
         </thead>
         <tbody id="weaponTable">
@@ -65,13 +81,13 @@
             data.forEach(weapon => {
                 let row = `<tr>
                     <td>${weapon.Weapon}</td>
-                    <td>${weapon.Ammo || 'N/A'}</td>
-                    <td>${weapon.Noise || 'N/A'}</td>
-                    <td>${weapon.Lager || 'N/A'}</td>
-                    <td>${weapon.Mag || 'N/A'}</td>
-                    <td>${weapon.Buy || 'N/A'}</td>
-                    <td>${weapon.Sell || 'N/A'}</td>
-                    <td>${weapon.Type}</td>
+                    <td class="small-column">${weapon.Ammo || 'N/A'}</td>
+                    <td class="small-column">${weapon.Noise || 'N/A'}</td>
+                    <td class="small-column">${weapon.Lager || 'N/A'}</td>
+                    <td class="small-column">${weapon.Mag || 'N/A'}</td>
+                    <td class="small-column">${weapon.Buy || 'N/A'}</td>
+                    <td class="small-column">${weapon.Sell || 'N/A'}</td>
+                    <td class="small-column">${weapon.Type}</td>
                 </tr>`;
                 tableBody.innerHTML += row;
             });
