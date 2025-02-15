@@ -137,21 +137,9 @@ input[type="number"]::-webkit-inner-spin-button {
     margin: 0;
 }
 
-.noise-1 { background-color: #a8df8e; } /* Medium Green (New) */
-.noise-2 { background-color: #d4edda; } /* Light Green */
-.noise-3 { background-color: #ffeeba; } /* Yellow */
-.noise-4 { background-color: #f8d7da; } /* Stronger Red */
-.noise-5 { background-color: #ffcccb; } /* Lighter Red (New) */
+.storage-yes { background-color: #388e3c; } /* Green */
+.storage-no { background-color: #d32f2f; } /* Red */
 
-.rating-1 { background-color: #a8df8e; } /* Medium Green (New) */
-.rating-2 { background-color: #d4edda; } /* Light Green */
-.rating-3 { background-color: #ffeeba; } /* Yellow */
-.rating-4 { background-color: #ffcccb; } /* Lighter Red (New) */
-.rating-5 { background-color: #f8d7da; } /* Stronger Red */
-
-.storage-yes { background-color: #d4edda; } /* Green */
-.storage-no { background-color: #f8d7da; } /* Red */
-
-.mag-0 { background-color: #f8d7da; } /* Red */
-.mag-1 { background-color: #ffeeba; }
-.mag-2 { background-color: #d4edda; } /* Green */
+.mag-0 { background-color: #d32f2f; } /* Red */
+.mag-1 { background-color: #ffeb3b; }
+.mag-2 { background-color: #388e3c; } /* Green */
