@@ -14,19 +14,30 @@ body {
     backdrop-filter: blur(5px);
 }
 
+#header {
+    background: black; /* Solid black band */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
 #search-container {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    background-color: #333; /* Dark matching band */
-    padding: 20px;
+    background: #222; /* Dark gray instead of transparent */
+    padding: 15px;
+    border-radius: 5px;
 }
 
 #search {
-    width: 40%;
+    background: white;
+    color: black;
+    border: 1px solid #ccc;
+    width: 60%; /* Make it bigger for better usability */
     padding: 10px;
     font-size: 16px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 1px solid #ccc;
     text-align: center;
 }
@@ -36,22 +47,26 @@ table {
     margin: auto;
     border-collapse: collapse;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
-    color: white; /* Ensure text is readable */
+    background: rgba(0, 0, 0, 0.8); /* Increased opacity for better readability */
+    color: white;
 }
 
 th, td {
     text-align: center;
-    font-size: 14px;
-    background: rgba(0, 0, 0, 0.3); /* Semi-transparent dark for better contrast */
+    font-size: 16px; /* Increase readability */
+    padding: 10px; /* More padding for better spacing */
+    background: rgba(20, 20, 20, 0.9); /* Darker background for better text contrast */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* More visible white borders */
     color: white;
-    padding: 8px; /* Slightly increased padding */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Soft white borders */
 }
 
 th {
     background: rgba(50, 50, 50, 0.8); /* Darker background for header */
     font-weight: bold;
+
+}
+h2 {
+    font-size: 24px;
 }
 
 .small-column {
@@ -67,7 +82,7 @@ select, input {
     font-size: 14px;
     padding: 4px;
     border-radius: 5px;
-    background: rgba(255, 255, 255, 0.9); /* Light background for readability */
+    background: rgba(255, 255, 255, 0.95); /* Make inputs almost fully opaque */
     color: black;
     border: 1px solid #ccc;
 }
