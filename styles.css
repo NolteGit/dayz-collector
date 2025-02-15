@@ -88,9 +88,9 @@ table {
     margin: auto;
     border-collapse: collapse;
     background: rgba(0, 0, 0, 0.8);
-    color: white;
-    font-family: "Roboto", sans-serif; /* Modern and clean */
+    font-family: "Open Sans", "Roboto", sans-serif; /* Best readability */
     font-size: 14px;
+    color: white;
 }
 
 th, td {
@@ -102,11 +102,11 @@ th, td {
 }
 
 th {
-    font-family: "Oswald", Impact, sans-serif; /* Military-style fonts */
-    font-weight: bold;
-    font-size: 18px; /* Slightly bigger */
-    text-transform: uppercase; /* Makes headers all caps */
-    letter-spacing: 1px; /* Adds slight spacing */
+    font-family: "Montserrat", "Roboto", sans-serif; /* Clean and professional */
+    font-weight: 700; /* Make it bold but not too heavy */
+    font-size: 16px;
+    text-transform: uppercase; /* Keeps it structured */
+    letter-spacing: 0.5px; /* Small spacing for clarity */
 }
 
 h2 {
@@ -118,16 +118,19 @@ h2 {
 }
 
 .weapon-column {
-    font-family: "Orbitron", "Exo 2", sans-serif; /* Futuristic/military feel */
-    font-weight: bold;
-    font-size: 16px;
-    color: #f1c40f; /* Gold-like color for visibility */
+    font-family: "Roboto", "Open Sans", sans-serif; /* Clean but modern */
+    font-weight: 600;
+    font-size: 15px;
+    color: #f1f1f1; /* Light color for readability */
     width: 20%;
 }
 
 select, input {
     width: 90%;
+    font-family: "Open Sans", "Roboto", sans-serif;
     font-size: 14px;
+    font-weight: 400;
+    color: black;
     border-radius: 5px;
     background: rgba(255, 255, 255, 0.95); /* Almost fully white */
     color: black;
