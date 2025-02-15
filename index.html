@@ -41,13 +41,10 @@
         .small-column {
             width: 10%;
         }
-        .editable {
-            cursor: pointer;
-            background-color: #f9f9f9;
-        }
-        .editable:focus {
-            outline: none;
-            background-color: #fff3c4;
+        select, input {
+            width: 100%;
+            font-size: 14px;
+            padding: 4px;
         }
     </style>
 </head>
@@ -75,6 +72,11 @@
     </table>
 
     <script>
+        const ammoTypes = [".30-06 (7.62x73)", ".338 Lapua", "20x102mm", "46x30mm", ".408 CheyTac", ".44 Mag", "57x28mm", "6x35mm", "5.56x45mm", ".50 BMG", ".30 Carbine", "7.62x39mm", "7.62x25mm", "7.62x54mm", ".308 Win", ".300 Win Mag", "7.92x57", ".500 S&W", "5.45x39mm", "9x19mm", "12ga", ".45 ACP", ".40 S&W"];
+        const storageOptions = ["Yes", "No"];
+        const noiseLevels = ["1", "2", "3", "4", "5"];
+        const magazineOptions = ["0", "1", "2"];
+
         let weaponsData = [];
 
         async function loadWeapons() {
@@ -90,18 +92,31 @@
             }
         }
 
+        function createDropdown(options, selectedValue, index, field) {
+            let select = `<select onchange="updateWeapon(${index}, '${field}', this.value)">`;
+            options.forEach(option => {
+                select += `<option value="${option}" ${option === selectedValue ? 'selected' : ''}>${option}</option>`;
+            });
+            select += `</select>`;
+            return select;
+        }
+
+        function createNumericInput(value, index, field) {
+            return `<input type="number" min="0" max="999999" value="${value}" onchange="updateWeapon(${index}, '${field}', this.value)">`;
+        }
+
         function displayWeapons(data) {
             const tableBody = document.getElementById("weaponTable");
             tableBody.innerHTML = "";
             data.forEach((weapon, index) => {
                 let row = `<tr>
                     <td>${weapon.Weapon}</td>
-                    <td class="small-column editable" contenteditable="true" onBlur="updateWeapon(${index}, 'Ammo', this.innerText)">${weapon.Ammo || 'N/A'}</td>
-                    <td class="small-column editable" contenteditable="true" onBlur="updateWeapon(${index}, 'Noise', this.innerText)">${weapon.Noise || 'N/A'}</td>
-                    <td class="small-column editable" contenteditable="true" onBlur="updateWeapon(${index}, 'Lager', this.innerText)">${weapon.Lager || 'N/A'}</td>
-                    <td class="small-column editable" contenteditable="true" onBlur="updateWeapon(${index}, 'Mag', this.innerText)">${weapon.Mag || 'N/A'}</td>
-                    <td class="small-column editable" contenteditable="true" onBlur="updateWeapon(${index}, 'Buy', this.innerText)">${weapon.Buy || 'N/A'}</td>
-                    <td class="small-column editable" contenteditable="true" onBlur="updateWeapon(${index}, 'Sell', this.innerText)">${weapon.Sell || 'N/A'}</td>
+                    <td class="small-column">${createDropdown(ammoTypes, weapon.Ammo || 'N/A', index, 'Ammo')}</td>
+                    <td class="small-column">${createDropdown(noiseLevels, weapon.Noise || 'N/A', index, 'Noise')}</td>
+                    <td class="small-column">${createDropdown(storageOptions, weapon.Lager || 'N/A', index, 'Lager')}</td>
+                    <td class="small-column">${createDropdown(magazineOptions, weapon.Mag || 'N/A', index, 'Mag')}</td>
+                    <td class="small-column">${createNumericInput(weapon.Buy || 'N/A', index, 'Buy')}</td>
+                    <td class="small-column">${createNumericInput(weapon.Sell || 'N/A', index, 'Sell')}</td>
                     <td class="small-column">${weapon.Type}</td>
                 </tr>`;
                 tableBody.innerHTML += row;
