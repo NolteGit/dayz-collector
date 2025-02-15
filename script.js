@@ -5,6 +5,8 @@ const magazineOptions = ["N/A", "0", "1", "2"];
 const weaponTypes = ["N/A", "AR", "Sniper", "Shotgun", "Pistol", "SMG", "Other"];
 
 let weaponsData = [];
+let editedRows = new Set();
+let editMode = false;
 
 async function loadWeapons() {
     const savedData = localStorage.getItem("weaponsData");
@@ -19,7 +21,8 @@ async function loadWeapons() {
 }
 
 function createDropdown(options, selectedValue, index, field) {
-    let select = `<select class="dropdown ${field}" onchange="updateWeapon(${index}, '${field}', this.value)" style="${getDropdownColor(field, selectedValue)}">`;
+    let disabled = editMode ? "" : "disabled";
+    let select = `<select class="dropdown ${field}" onchange="markRowAsEdited(${index})" style="${getDropdownColor(field, selectedValue)}" ${disabled}>`;
     options.forEach(option => {
         select += `<option value="${option}" ${option === selectedValue ? 'selected' : ''}>${option}</option>`;
     });
@@ -48,7 +51,8 @@ function getDropdownColor(field, value) {
 }
 
 function createNumericInput(value, index, field) {
-    return `<input type="number" min="0" max="999999" value="${value || ''}" onchange="updateWeapon(${index}, '${field}', this.value)">`;
+    let disabled = editMode ? "" : "disabled";
+    return `<input type="number" min="0" max="999999" value="${value || ''}" onchange="markRowAsEdited(${index})" ${disabled}>`;
 }
 
 function displayWeapons(data) {
@@ -67,20 +71,46 @@ function displayWeapons(data) {
         </tr>`;
         tableBody.innerHTML += row;
     });
+    updateEditButton();
 }
 
-function searchWeapons() {
-    let searchValue = document.getElementById("search").value.toLowerCase();
-    let filteredWeapons = weaponsData.filter(weapon =>
-        weapon.Weapon.toLowerCase().includes(searchValue)
-    );
-    displayWeapons(filteredWeapons);
+function markRowAsEdited(index) {
+    editedRows.add(index);
 }
 
-function updateWeapon(index, field, value) {
-    weaponsData[index][field] = value;
-    localStorage.setItem("weaponsData", JSON.stringify(weaponsData));
+function toggleEditMode() {
+    editMode = !editMode;
     displayWeapons(weaponsData);
+}
+
+function saveChanges() {
+    editedRows.forEach(index => {
+        let row = document.querySelectorAll("#weaponTable tr")[index];
+        weaponsData[index] = {
+            Weapon: row.cells[0].innerText,
+            Ammo: row.cells[1].querySelector("select").value,
+            Noise: row.cells[2].querySelector("select").value,
+            Lager: row.cells[3].querySelector("select").value,
+            Mag: row.cells[4].querySelector("select").value,
+            Buy: row.cells[5].querySelector("input").value,
+            Sell: row.cells[6].querySelector("input").value,
+            Type: row.cells[7].querySelector("select").value
+        };
+    });
+    localStorage.setItem("weaponsData", JSON.stringify(weaponsData));
+    editedRows.clear();
+    toggleEditMode();
+}
+
+function updateEditButton() {
+    let buttonContainer = document.getElementById("edit-buttons");
+    if (!buttonContainer) {
+        buttonContainer = document.createElement("div");
+        buttonContainer.id = "edit-buttons";
+        document.body.appendChild(buttonContainer);
+    }
+    buttonContainer.innerHTML = `<button onclick="toggleEditMode()">${editMode ? "Cancel" : "Edit"}</button> ` +
+                                (editMode ? `<button onclick="saveChanges()">Save</button>` : "");
 }
 
 window.onload = loadWeapons;
