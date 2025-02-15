@@ -137,14 +137,14 @@ input[type="number"]::-webkit-inner-spin-button {
     margin: 0;
 }
 
-.noise-1 { background-color: #d4edda; } /* Light Green */
-.noise-2 { background-color: #a8df8e; } /* Medium Green (New) */
+.noise-1 { background-color: #a8df8e; } /* Medium Green (New) */
+.noise-2 { background-color: #d4edda; } /* Light Green */
 .noise-3 { background-color: #ffeeba; } /* Yellow */
-.noise-4 { background-color: #ffcccb; } /* Lighter Red (New) */
-.noise-5 { background-color: #f8d7da; } /* Stronger Red */
+.noise-4 { background-color: #f8d7da; } /* Stronger Red */
+.noise-5 { background-color: #ffcccb; } /* Lighter Red (New) */
 
-.rating-1 { background-color: #d4edda; } /* Light Green */
-.rating-2 { background-color: #a8df8e; } /* Medium Green (New) */
+.rating-1 { background-color: #a8df8e; } /* Medium Green (New) */
+.rating-2 { background-color: #d4edda; } /* Light Green */
 .rating-3 { background-color: #ffeeba; } /* Yellow */
 .rating-4 { background-color: #ffcccb; } /* Lighter Red (New) */
 .rating-5 { background-color: #f8d7da; } /* Stronger Red */
