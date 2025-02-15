@@ -40,23 +40,9 @@ function createDropdown(options, selectedValue, index, field, disabled) {
         if (option === selectedValue) optionElement.selected = true;
         select.appendChild(optionElement);
     });
-    return select;
-}
-
-function getDropdownColor(field, value) {
-    const colors = {
-        "1": "background-color: #d4edda;", // Green
-        "2": "background-color: #c3e6cb;",
-        "3": "background-color: #ffeeba;", // Yellow
-        "4": "background-color: #f5c6cb;",
-        "5": "background-color: #f8d7da;", // Red
-        "Yes": "background-color: #d4edda;",
-        "No": "background-color: #f8d7da;",
-        "2": "background-color: #d4edda;",
-        "1": "background-color: #ffeeba;",
-        "0": "background-color: #f8d7da;"
-    };
-    return colors[value] || "";
+    let td = document.createElement("td");
+    td.appendChild(select);
+    return td;
 }
 
 function createNumericInput(value, index, field, disabled) {
@@ -67,7 +53,9 @@ function createNumericInput(value, index, field, disabled) {
     input.value = value || "";
     input.disabled = disabled;
     input.onchange = () => markRowAsEdited(index, field, input.value);
-    return input;
+    let td = document.createElement("td");
+    td.appendChild(input);
+    return td;
 }
 
 function displayWeapons(data) {
@@ -77,7 +65,10 @@ function displayWeapons(data) {
     data.forEach((weapon, index) => {
         let isEditable = editStates[index] || false;
         let row = document.createElement("tr");
-        row.innerHTML = `<td class='weapon-column' style='width: 150px;'>${weapon.Weapon}</td>`;
+        let weaponCell = document.createElement("td");
+        weaponCell.textContent = weapon.Weapon;
+        weaponCell.className = "weapon-column";
+        row.appendChild(weaponCell);
         row.appendChild(createDropdown(ammoTypes, weapon.Ammo || 'N/A', index, 'Ammo', !isEditable));
         row.appendChild(createDropdown(noiseLevels, weapon.Noise || 'N/A', index, 'Noise', !isEditable));
         row.appendChild(createDropdown(storageOptions, weapon.Lager || 'N/A', index, 'Lager', !isEditable));
@@ -85,11 +76,15 @@ function displayWeapons(data) {
         row.appendChild(createNumericInput(weapon.Buy, index, 'Buy', !isEditable));
         row.appendChild(createNumericInput(weapon.Sell, index, 'Sell', !isEditable));
         row.appendChild(createDropdown(weaponTypes, weapon.Type || 'N/A', index, 'Type', !isEditable));
+        
+        let editTd = document.createElement("td");
         let editButton = document.createElement("button");
         editButton.className = "edit-btn";
         editButton.textContent = isEditable ? "✔ Save" : "✏ Edit";
         editButton.onclick = () => toggleEditRow(index);
-        row.appendChild(editButton);
+        editTd.appendChild(editButton);
+        row.appendChild(editTd);
+        
         tableBody.appendChild(row);
     });
     console.timeEnd("displayWeapons");
