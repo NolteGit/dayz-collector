@@ -19,12 +19,32 @@ async function loadWeapons() {
 }
 
 function createDropdown(options, selectedValue, index, field) {
-    let select = `<select class="dropdown-${field}" onchange="updateWeapon(${index}, '${field}', this.value)">`;
+    let select = `<select class="dropdown ${field}" onchange="updateWeapon(${index}, '${field}', this.value)" style="${getDropdownColor(field, selectedValue)}">`;
     options.forEach(option => {
         select += `<option value="${option}" ${option === selectedValue ? 'selected' : ''}>${option}</option>`;
     });
     select += `</select>`;
     return select;
+}
+
+function getDropdownColor(field, value) {
+    if (field === "Noise") {
+        return value === "1" ? "background-color: #d4edda;" :
+               value === "2" ? "background-color: #c3e6cb;" :
+               value === "3" ? "background-color: #ffeeba;" :
+               value === "4" ? "background-color: #f5c6cb;" :
+               value === "5" ? "background-color: #f8d7da;" : "";
+    }
+    if (field === "Lager") {
+        return value === "Yes" ? "background-color: #d4edda;" :
+               value === "No" ? "background-color: #f8d7da;" : "";
+    }
+    if (field === "Mag") {
+        return value === "2" ? "background-color: #d4edda;" :
+               value === "1" ? "background-color: #ffeeba;" :
+               value === "0" ? "background-color: #f8d7da;" : "";
+    }
+    return "";
 }
 
 function createNumericInput(value, index, field) {
@@ -47,27 +67,6 @@ function displayWeapons(data) {
         </tr>`;
         tableBody.innerHTML += row;
     });
-    applyDropdownColors();
-}
-
-function applyDropdownColors() {
-    document.querySelectorAll(".dropdown-Noise").forEach(dropdown => {
-        const value = dropdown.value;
-        dropdown.style.backgroundColor = value === "1" ? "#d4edda" :
-                                         value === "2" ? "#c3e6cb" :
-                                         value === "3" ? "#ffeeba" :
-                                         value === "4" ? "#f5c6cb" :
-                                         value === "5" ? "#f8d7da" : "white";
-    });
-    document.querySelectorAll(".dropdown-Lager").forEach(dropdown => {
-        dropdown.style.backgroundColor = dropdown.value === "Yes" ? "#d4edda" :
-                                         dropdown.value === "No" ? "#f8d7da" : "white";
-    });
-    document.querySelectorAll(".dropdown-Mag").forEach(dropdown => {
-        dropdown.style.backgroundColor = dropdown.value === "2" ? "#d4edda" :
-                                         dropdown.value === "1" ? "#ffeeba" :
-                                         dropdown.value === "0" ? "#f8d7da" : "white";
-    });
 }
 
 function searchWeapons() {
@@ -81,7 +80,7 @@ function searchWeapons() {
 function updateWeapon(index, field, value) {
     weaponsData[index][field] = value;
     localStorage.setItem("weaponsData", JSON.stringify(weaponsData));
-    applyDropdownColors();
+    displayWeapons(weaponsData);
 }
 
 window.onload = loadWeapons;
