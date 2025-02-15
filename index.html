@@ -41,6 +41,9 @@
         .small-column {
             width: 8%;
         }
+        .weapon-column {
+            width: 20%;
+        }
         select, input {
             width: 90%;
             font-size: 14px;
@@ -56,6 +59,16 @@
             -webkit-appearance: none;
             margin: 0;
         }
+        .noise-1 { background-color: #d4edda; } /* Green */
+        .noise-2 { background-color: #c3e6cb; }
+        .noise-3 { background-color: #ffeeba; }
+        .noise-4 { background-color: #f5c6cb; }
+        .noise-5 { background-color: #f8d7da; } /* Red */
+        .storage-yes { background-color: #d4edda; } /* Green */
+        .storage-no { background-color: #f8d7da; } /* Red */
+        .mag-0 { background-color: #f8d7da; } /* Red */
+        .mag-1 { background-color: #ffeeba; }
+        .mag-2 { background-color: #d4edda; } /* Green */
     </style>
 </head>
 <body>
@@ -66,7 +79,7 @@
     <table>
         <thead>
             <tr>
-                <th>Weapon Name</th>
+                <th class="weapon-column">Weapon</th>
                 <th class="small-column">Ammo Type</th>
                 <th class="small-column">Noise</th>
                 <th class="small-column">Storage</th>
@@ -86,6 +99,7 @@
         const storageOptions = ["Yes", "No"];
         const noiseLevels = ["1", "2", "3", "4", "5"];
         const magazineOptions = ["0", "1", "2"];
+        const weaponTypes = ["AR", "Sniper", "Shotgun", "Pistol", "SMG", "Other"];
 
         let weaponsData = [];
 
@@ -93,41 +107,30 @@
             const savedData = localStorage.getItem("weaponsData");
             if (savedData) {
                 weaponsData = JSON.parse(savedData);
-                displayWeapons(weaponsData);
             } else {
                 const response = await fetch('dayz_weapons.json');
                 weaponsData = await response.json();
                 localStorage.setItem("weaponsData", JSON.stringify(weaponsData));
-                displayWeapons(weaponsData);
             }
-        }
-
-        function createDropdown(options, selectedValue, index, field) {
-            let select = `<select onchange="updateWeapon(${index}, '${field}', this.value)">`;
-            options.forEach(option => {
-                select += `<option value="${option}" ${option === selectedValue ? 'selected' : ''}>${option}</option>`;
-            });
-            select += `</select>`;
-            return select;
-        }
-
-        function createNumericInput(value, index, field) {
-            return `<input type="number" min="0" max="999999" value="${value}" onchange="updateWeapon(${index}, '${field}', this.value)">`;
+            displayWeapons(weaponsData);
         }
 
         function displayWeapons(data) {
             const tableBody = document.getElementById("weaponTable");
             tableBody.innerHTML = "";
             data.forEach((weapon, index) => {
+                let noiseClass = `noise-${weapon.Noise || '3'}`;
+                let storageClass = `storage-${weapon.Lager === 'Yes' ? 'yes' : 'no'}`;
+                let magClass = `mag-${weapon.Mag || '0'}`;
                 let row = `<tr>
-                    <td>${weapon.Weapon}</td>
-                    <td class="small-column">${createDropdown(ammoTypes, weapon.Ammo || 'N/A', index, 'Ammo')}</td>
-                    <td class="small-column">${createDropdown(noiseLevels, weapon.Noise || 'N/A', index, 'Noise')}</td>
-                    <td class="small-column">${createDropdown(storageOptions, weapon.Lager || 'N/A', index, 'Lager')}</td>
-                    <td class="small-column">${createDropdown(magazineOptions, weapon.Mag || 'N/A', index, 'Mag')}</td>
-                    <td class="small-column">${createNumericInput(weapon.Buy || 'N/A', index, 'Buy')}</td>
-                    <td class="small-column">${createNumericInput(weapon.Sell || 'N/A', index, 'Sell')}</td>
-                    <td class="small-column">${weapon.Type}</td>
+                    <td class="weapon-column">${weapon.Weapon}</td>
+                    <td class="small-column">${weapon.Ammo || 'N/A'}</td>
+                    <td class="small-column ${noiseClass}">${weapon.Noise || 'N/A'}</td>
+                    <td class="small-column ${storageClass}">${weapon.Lager || 'N/A'}</td>
+                    <td class="small-column ${magClass}">${weapon.Mag || 'N/A'}</td>
+                    <td class="small-column">${weapon.Buy || 'N/A'}</td>
+                    <td class="small-column">${weapon.Sell || 'N/A'}</td>
+                    <td class="small-column">${weapon.Type || 'Other'}</td>
                 </tr>`;
                 tableBody.innerHTML += row;
             });
@@ -139,11 +142,6 @@
                 weapon.Weapon.toLowerCase().includes(searchValue)
             );
             displayWeapons(filteredWeapons);
-        }
-
-        function updateWeapon(index, field, value) {
-            weaponsData[index][field] = value;
-            localStorage.setItem("weaponsData", JSON.stringify(weaponsData));
         }
 
         window.onload = loadWeapons;
