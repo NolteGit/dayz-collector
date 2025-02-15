@@ -11,6 +11,7 @@ body {
     background-size: cover;
     padding: 20px;
     min-height: 100vh;
+    backdrop-filter: blur(5px);
 }
 
 #search-container {
@@ -35,17 +36,22 @@ table {
     margin: auto;
     border-collapse: collapse;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
+    color: white; /* Ensure text is readable */
 }
 
 th, td {
-    border: 1px solid #ddd;
-    padding: 6px;
     text-align: center;
     font-size: 14px;
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent dark for better contrast */
+    color: white;
+    padding: 8px; /* Slightly increased padding */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Soft white borders */
 }
 
 th {
-    background-color: #f4f4f4;
+    background: rgba(50, 50, 50, 0.8); /* Darker background for header */
+    font-weight: bold;
 }
 
 .small-column {
@@ -61,6 +67,8 @@ select, input {
     font-size: 14px;
     padding: 4px;
     border-radius: 5px;
+    background: rgba(255, 255, 255, 0.9); /* Light background for readability */
+    color: black;
     border: 1px solid #ccc;
 }
 
