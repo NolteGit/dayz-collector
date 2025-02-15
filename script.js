@@ -3,6 +3,8 @@ const storageOptions = ["N/A", "Yes", "No"];
 const noiseLevels = ["N/A", "1", "2", "3", "4", "5"];
 const magazineOptions = ["N/A", "0", "1", "2"];
 const weaponTypes = ["N/A", "AR", "Sniper", "Shotgun", "Pistol", "SMG", "Other"];
+const ratingOptions = ["N/A", "1", "2", "3", "4", "5"];
+
 
 let weaponsData = [];
 let editStates = {};

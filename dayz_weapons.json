@@ -7,7 +7,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"ACWR",
@@ -17,7 +18,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"AEK971",
@@ -27,7 +29,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"AK103",
@@ -37,7 +40,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"AK105",
@@ -47,7 +51,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"AK107",
@@ -57,7 +62,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"AK107Camouflage",
@@ -67,7 +73,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"AK12",
@@ -77,7 +84,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"AK12Green",
@@ -87,7 +95,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"AK12Tan",
@@ -97,7 +106,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"AK47",
@@ -107,7 +117,8 @@
         "Mag":2.0,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"AK47Blue",
@@ -117,7 +128,8 @@
         "Mag":1.0,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"AK47Boar",
@@ -127,7 +139,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"AK47Dragon",
@@ -137,7 +150,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"AK47Spider",
@@ -147,7 +161,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"AK47Tactical",
@@ -157,7 +172,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"AK47WhiteWolf",
@@ -167,7 +183,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"AK47Wolf",
@@ -177,7 +194,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"AK9",
@@ -187,7 +205,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"AKS74U",
@@ -197,7 +216,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"AMD",
@@ -207,7 +227,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"AMDSpaceship",
@@ -217,7 +238,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"AN94",
@@ -227,7 +249,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"AR15",
@@ -237,7 +260,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"AR70",
@@ -247,7 +271,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"ARX160",
@@ -257,7 +282,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"ARX160Black",
@@ -267,7 +293,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"ASR",
@@ -277,7 +304,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"ASVal",
@@ -287,7 +315,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"Ash12",
@@ -297,7 +326,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"Browning1928",
@@ -307,7 +337,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"Bushmaster M17SMod",
@@ -317,7 +348,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"CZ805",
@@ -327,7 +359,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"CZScorpion",
@@ -337,7 +370,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"CalifasNomad",
@@ -347,7 +381,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"FG42",
@@ -357,7 +392,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"FG42Old",
@@ -367,7 +403,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"FNF2000",
@@ -377,7 +414,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"FNF2000Beige",
@@ -387,7 +425,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"FNFAL",
@@ -397,7 +436,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"FNFNC",
@@ -407,7 +447,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"FNM29",
@@ -417,7 +458,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"Famas",
@@ -427,7 +469,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"FamasSpecialOps",
@@ -437,7 +480,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"FamasTan",
@@ -447,7 +491,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"G3A3",
@@ -457,7 +502,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"G56",
@@ -467,7 +513,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"GalilSAR",
@@ -477,7 +524,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"HK33",
@@ -487,7 +535,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"HK416",
@@ -497,7 +546,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"HK416Blue",
@@ -507,7 +557,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"HK416Desert",
@@ -517,7 +568,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"HK416Forest",
@@ -527,7 +579,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"HK416Jungle",
@@ -537,7 +590,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"HK416Urban",
@@ -547,7 +601,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"HK416Wood",
@@ -557,7 +612,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"HK417",
@@ -567,7 +623,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"HKCarabine",
@@ -577,7 +634,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"HoneyBadger",
@@ -587,7 +645,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"HoneyBadgerGold",
@@ -597,7 +656,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"IA2",
@@ -607,7 +667,8 @@
         "Mag":0.0,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"Howa Typ20",
@@ -617,7 +678,8 @@
         "Mag":2.0,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"K2C",
@@ -627,7 +689,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"L85A2",
@@ -637,7 +700,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"LAR",
@@ -647,7 +711,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"LR300",
@@ -657,7 +722,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"LR300Camo",
@@ -667,7 +733,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"M134",
@@ -677,7 +744,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"M16",
@@ -687,7 +755,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"M16A1Black",
@@ -697,7 +766,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"M16A1Wood",
@@ -707,7 +777,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"M16A2",
@@ -717,7 +788,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"M16A3",
@@ -727,7 +799,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"M16A4",
@@ -737,7 +810,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"M249",
@@ -747,7 +821,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"M4A1",
@@ -757,7 +832,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"M4V5",
@@ -767,7 +843,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"M60",
@@ -777,7 +854,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"MAB38",
@@ -787,7 +865,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"MG42",
@@ -797,7 +876,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"MK14",
@@ -807,7 +887,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"MK14Sand",
@@ -817,7 +898,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"MK18",
@@ -827,7 +909,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"MSBS GrotBGold",
@@ -837,7 +920,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"MiniGun",
@@ -847,7 +931,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"OTSGrosa",
@@ -857,7 +942,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"PKM",
@@ -867,7 +953,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"PKP",
@@ -877,7 +964,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"PP19Bison",
@@ -887,7 +975,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"PPSH",
@@ -897,7 +986,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"ParaSA58",
@@ -907,7 +997,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"PindadSS2",
@@ -917,7 +1008,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"QBZ03",
@@ -927,7 +1019,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"RK62",
@@ -937,7 +1030,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"RPK16",
@@ -947,7 +1041,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"RPK16Green",
@@ -957,7 +1052,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"RPK16Tan",
@@ -967,7 +1063,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"RemingtonR5",
@@ -977,7 +1074,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"Ruger556",
@@ -987,7 +1085,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"SG550",
@@ -997,7 +1096,8 @@
         "Mag":2.0,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"SG553",
@@ -1007,7 +1107,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"SG556",
@@ -1017,7 +1118,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"SR47",
@@ -1027,7 +1129,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"STG44",
@@ -1037,7 +1140,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"STG58",
@@ -1047,7 +1151,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"ScarDragon",
@@ -1057,7 +1162,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"ScarH",
@@ -1067,7 +1173,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"ScarL",
@@ -1077,7 +1184,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"ScarLKBlue",
@@ -1087,7 +1195,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"ScarLKBlueCamo",
@@ -1097,7 +1206,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"ScarLKGreen",
@@ -1107,7 +1217,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"ScarLKGreenCamo",
@@ -1117,7 +1228,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"ScarLKTan",
@@ -1127,7 +1239,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"StenGun",
@@ -1137,7 +1250,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"Sterling",
@@ -1147,7 +1261,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"SteyrAug Black",
@@ -1157,7 +1272,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"Stoner63",
@@ -1167,7 +1283,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"Tar21",
@@ -1177,7 +1294,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"Thompson",
@@ -1187,7 +1305,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"ThompsonMK2",
@@ -1197,7 +1316,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"Type64",
@@ -1207,7 +1327,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"Type89",
@@ -1217,7 +1338,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"Vepr Sok94",
@@ -1227,7 +1349,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"XM8",
@@ -1237,7 +1360,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"AR"
+        "Type":"AR",
+        "Rating":null
     },
     {
         "Weapon":"ASW338",
@@ -1247,7 +1371,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"AWMBlack",
@@ -1257,7 +1382,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"AWMCustom",
@@ -1267,7 +1393,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"AWMDesert",
@@ -1277,7 +1404,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"AWMGreen",
@@ -1287,7 +1415,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"AWMGreenTan",
@@ -1297,7 +1426,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"AX50",
@@ -1307,7 +1437,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"Airbow",
@@ -1317,7 +1448,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"AmericanRifle",
@@ -1327,7 +1459,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"Anzio",
@@ -1337,7 +1470,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"Arisaka",
@@ -1347,7 +1481,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"BarrettM82",
@@ -1357,7 +1492,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"BarrettM82Desert",
@@ -1367,7 +1503,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"BarrettM82Snow",
@@ -1377,7 +1514,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"Beowulf",
@@ -1387,7 +1525,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"DMR25",
@@ -1397,7 +1536,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"Dragunov",
@@ -1407,7 +1547,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"FRF2",
@@ -1417,7 +1558,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"FRF2BlackDragon",
@@ -1427,7 +1569,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"G43",
@@ -1437,7 +1580,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"Kar98",
@@ -1447,7 +1591,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"L96A1",
@@ -1457,7 +1602,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"M107",
@@ -1467,7 +1613,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"M110",
@@ -1477,7 +1624,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"M14",
@@ -1487,7 +1635,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"M1Carbine",
@@ -1497,7 +1646,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"M1Garand",
@@ -1507,7 +1657,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"M200",
@@ -1517,7 +1668,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"M200Mod",
@@ -1527,7 +1679,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"M200Old",
@@ -1537,7 +1690,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"M200Sand",
@@ -1547,7 +1701,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"M24BrownTan",
@@ -1557,7 +1712,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"M24GreenTan",
@@ -1567,7 +1723,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"M24GreenTan2",
@@ -1577,7 +1734,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"M24Wood",
@@ -1587,7 +1745,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"M40A5",
@@ -1597,7 +1756,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"Marlin",
@@ -1607,7 +1767,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"McMillanCS5",
@@ -1617,7 +1778,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"MosinNagant",
@@ -1627,7 +1789,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"PSG1",
@@ -1637,7 +1800,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"R700Mod",
@@ -1647,7 +1811,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"Remington700",
@@ -1657,7 +1822,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"RemingtonMSR",
@@ -1667,7 +1833,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"SG550S",
@@ -1677,7 +1844,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"SKS",
@@ -1687,7 +1855,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"SSG69",
@@ -1697,7 +1866,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"SV98NovaPriam",
@@ -1707,7 +1877,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"SVDDragunov",
@@ -1717,7 +1888,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"SVDDragunovBrownTan",
@@ -1727,7 +1899,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"SVDDragunovGreyTan",
@@ -1737,7 +1910,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"SVDDragunovTan",
@@ -1747,7 +1921,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"SVT38",
@@ -1757,7 +1932,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"Sako75",
@@ -1767,7 +1943,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"T5000",
@@ -1777,7 +1954,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"Tac21",
@@ -1787,7 +1965,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"Winchester1873",
@@ -1797,7 +1976,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"WinchesterRifle",
@@ -1807,7 +1987,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Sniper"
+        "Type":"Sniper",
+        "Rating":null
     },
     {
         "Weapon":"1911 WilsonCombat",
@@ -1817,7 +1998,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"ArexZero",
@@ -1827,7 +2009,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"Beretta92FS",
@@ -1837,7 +2020,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"BerettaDEBlack",
@@ -1847,7 +2031,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"BerettaDEBurton",
@@ -1857,7 +2042,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"BerettaGoldenFlower",
@@ -1867,7 +2053,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"BerettaPX4",
@@ -1877,7 +2064,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"BerettaSamuraiEdge",
@@ -1887,7 +2075,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"BerettaSwordCutlass",
@@ -1897,7 +2086,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"CZ75M",
@@ -1907,7 +2097,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"Colt1911Gold",
@@ -1917,7 +2108,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"Colt1911Holy",
@@ -1927,7 +2119,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"Colt1911Stainless",
@@ -1937,7 +2130,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"ColtPython",
@@ -1947,7 +2141,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"DesertEagle",
@@ -1957,7 +2152,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"DesertEagleFalcon",
@@ -1967,7 +2163,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"DesertEagleSky",
@@ -1977,7 +2174,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"FN57Pink",
@@ -1987,7 +2185,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"FN57Toxic",
@@ -1997,7 +2196,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"FNS9",
@@ -2007,7 +2207,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"Glock17",
@@ -2017,7 +2218,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"Glock18Egyptian",
@@ -2027,7 +2229,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"Glock18Honor",
@@ -2037,7 +2240,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"Glock18Jungle",
@@ -2047,7 +2251,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"Glock18Rebel",
@@ -2057,7 +2262,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"Glock18Weasel",
@@ -2067,7 +2273,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"Glock18Wolf",
@@ -2077,7 +2284,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"Glock42",
@@ -2087,7 +2295,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"GlockZapper",
@@ -2097,7 +2306,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"HK47",
@@ -2107,7 +2317,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"HK47Tan",
@@ -2117,7 +2328,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"LugerP08",
@@ -2127,7 +2339,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"MK23Socom",
@@ -2137,7 +2350,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"MP40",
@@ -2147,7 +2361,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"MP443",
@@ -2157,7 +2372,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"P2000BlueGirl",
@@ -2167,7 +2383,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"P2000Protector",
@@ -2177,7 +2394,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"P2000Renegade",
@@ -2187,7 +2405,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"P2000Toxic",
@@ -2197,7 +2416,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"P8",
@@ -2207,7 +2427,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"SP1Vektor",
@@ -2217,7 +2438,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"SR1Gyrza",
@@ -2227,7 +2449,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"SigSauerP226",
@@ -2237,7 +2460,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"SigSauerP229",
@@ -2247,7 +2471,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"SigSauerP250",
@@ -2257,7 +2482,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"SigSauerP250Colored",
@@ -2267,7 +2493,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"SigSauerP250Patrician",
@@ -2277,7 +2504,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"SigSauerP250PeaCock",
@@ -2287,7 +2515,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"SigSauerP250Wingshot",
@@ -2297,7 +2526,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"Tokarev",
@@ -2307,7 +2537,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"USPChromatic",
@@ -2317,7 +2548,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"USPPsychodelic",
@@ -2327,7 +2559,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"WaltherP99",
@@ -2337,7 +2570,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"WaltherPPK",
@@ -2347,7 +2581,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"WaltherQ5",
@@ -2357,7 +2592,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Pistol"
+        "Type":"Pistol",
+        "Rating":null
     },
     {
         "Weapon":"AA12",
@@ -2367,7 +2603,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"AA12Black",
@@ -2377,7 +2614,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"AA12Dragon",
@@ -2387,7 +2625,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"AA12HellDragon",
@@ -2397,7 +2636,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"AEK919",
@@ -2407,7 +2647,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"Armsan",
@@ -2417,7 +2658,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"Auto9",
@@ -2427,7 +2669,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"BenelliLE",
@@ -2437,7 +2680,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"BenelliM3",
@@ -2447,7 +2691,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"BenelliM4",
@@ -2457,7 +2702,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"ClassicShotgun",
@@ -2467,7 +2713,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"CX4Storm",
@@ -2477,7 +2724,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"SMG"
+        "Type":"SMG",
+        "Rating":null
     },
     {
         "Weapon":"DoubleBarrelShotgun",
@@ -2487,7 +2735,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"Fabarm ST12",
@@ -2497,7 +2746,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"FMG9",
@@ -2507,7 +2757,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"ImprovisedShotgun",
@@ -2517,7 +2768,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"IthacaM37",
@@ -2527,7 +2779,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"KacPDW",
@@ -2537,7 +2790,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"SMG"
+        "Type":"SMG",
+        "Rating":null
     },
     {
         "Weapon":"Komrad12",
@@ -2547,7 +2801,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"Kriss",
@@ -2557,7 +2812,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"SMG"
+        "Type":"SMG",
+        "Rating":null
     },
     {
         "Weapon":"KSG",
@@ -2567,7 +2823,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"M1912",
@@ -2577,7 +2834,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"Mossberg500",
@@ -2587,7 +2845,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"Mossberg590a1",
@@ -2597,7 +2856,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"MP153",
@@ -2607,7 +2867,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"MP153Black",
@@ -2617,7 +2878,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"MP5Silenced",
@@ -2627,7 +2889,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"MP7",
@@ -2637,7 +2900,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"MP7Eagle",
@@ -2647,7 +2911,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"MPX",
@@ -2657,7 +2922,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"P90",
@@ -2667,7 +2933,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"P90Arctic",
@@ -2677,7 +2944,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"P90Colored",
@@ -2687,7 +2955,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"P90Shallow Grave",
@@ -2697,7 +2966,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"PP19Vityaz",
@@ -2707,7 +2977,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"Remington870Tactical",
@@ -2717,7 +2988,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"SawedShotgun",
@@ -2727,7 +2999,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"SPAS",
@@ -2737,7 +3010,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"Spas15",
@@ -2747,7 +3021,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"Spectre",
@@ -2757,7 +3032,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"SMG"
+        "Type":"SMG",
+        "Rating":null
     },
     {
         "Weapon":"SR2",
@@ -2767,7 +3043,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"SR3",
@@ -2777,7 +3054,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"SST30",
@@ -2787,7 +3065,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"SST30Halloween",
@@ -2797,7 +3076,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"SST30Orange",
@@ -2807,7 +3087,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"SST30Silenced",
@@ -2817,7 +3098,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"Tec9",
@@ -2827,7 +3109,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"Toz34",
@@ -2837,7 +3120,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"UMP",
@@ -2847,7 +3131,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"UMPPrimalSaber",
@@ -2857,7 +3142,8 @@
         "Mag":null,
         "Buy":null,
         "Sell":null,
-        "Type":"Shotgun"
+        "Type":"Shotgun",
+        "Rating":null
     },
     {
         "Weapon":"Uzi",
