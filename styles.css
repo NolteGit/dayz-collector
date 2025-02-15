@@ -162,18 +162,21 @@ input[type="number"]::-webkit-inner-spin-button {
     flex-grow: 1;
 }
 
-/* Position Edit Button to the Right */
+/* Ensures edit column is at the right */
+.edit-column {
+    text-align: right;
+    width: 50px;
+}
+
+/* Style for the Edit Button */
 .edit-btn {
-    background-color: #f1c40f;
+    background-color: #f1c40f; /* Yellow button */
     color: black;
     border: none;
     padding: 6px 10px;
     font-size: 14px;
     cursor: pointer;
     border-radius: 5px;
-    margin-left: 10px; /* Space between row & button */
-    position: absolute;
-    right: 10px; /* Move to the right */
 }
 
 .edit-btn:hover {
