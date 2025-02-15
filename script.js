@@ -29,6 +29,8 @@ async function loadWeapons() {
 }
 
 function getDropdownColor(field, value) {
+    if (value === "N/A") return ""; // Prevents coloring "N/A"
+    
     const colors = {
         // Noise Levels
         "1": "background-color: #4caf50; color: white;",  // Gray
@@ -147,3 +149,33 @@ document.getElementById("search").addEventListener("input", () => {
 document.addEventListener("DOMContentLoaded", () => {
     loadWeapons();
 });
+
+function generateTableRow(weapon) {
+    let row = document.createElement("tr");
+
+    row.innerHTML = `
+        <td>${weapon.name}</td>
+        <td><select>${generateAmmoOptions(weapon.ammoType)}</select></td>
+        <td><select>${generateNoiseOptions(weapon.noise)}</select></td>
+        <td><select>${generateStorageOptions(weapon.storage)}</select></td>
+        <td><select>${generateMagazineOptions(weapon.magazines)}</select></td>
+        <td><input type="number" value="${weapon.buyPrice}"></td>
+        <td><input type="number" value="${weapon.sellPrice}"></td>
+        <td><select>${generateWeaponTypeOptions(weapon.type)}</select></td>
+        <td><select>${generateRatingOptions(weapon.rating)}</select></td>
+    `;
+
+    // Create Edit Button (outside the table but aligned)
+    let editButton = document.createElement("button");
+    editButton.textContent = "✏️ Edit";
+    editButton.classList.add("edit-button");
+    editButton.onclick = function () {
+        alert("Editing: " + weapon.name);
+        // Implement actual editing functionality here
+    };
+
+    // Append the button AFTER the row (aligned)
+    row.appendChild(editButton);
+
+    return row;
+}
