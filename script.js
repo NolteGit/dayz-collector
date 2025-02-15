@@ -8,6 +8,7 @@ let weaponsData = [];
 let editStates = {};
 
 async function loadWeapons() {
+    console.time("loadWeapons");
     const savedData = localStorage.getItem("weaponsData");
     if (savedData) {
         weaponsData = JSON.parse(savedData);
@@ -16,6 +17,7 @@ async function loadWeapons() {
         weaponsData = await response.json();
         localStorage.setItem("weaponsData", JSON.stringify(weaponsData));
     }
+    console.timeEnd("loadWeapons");
     displayWeapons();
 }
 
@@ -24,7 +26,6 @@ function createDropdown(options, selectedValue, index, field, disabled) {
     select.className = `dropdown ${field}`;
     select.onchange = () => markRowAsEdited(index, field, select.value);
     select.disabled = disabled;
-    select.style = getDropdownColor(field, selectedValue);
     
     options.forEach(option => {
         let optionElement = document.createElement("option");
@@ -34,22 +35,6 @@ function createDropdown(options, selectedValue, index, field, disabled) {
         select.appendChild(optionElement);
     });
     return select;
-}
-
-function getDropdownColor(field, value) {
-    const colors = {
-        "1": "background-color: #d4edda;", // Green
-        "2": "background-color: #c3e6cb;",
-        "3": "background-color: #ffeeba;", // Yellow
-        "4": "background-color: #f5c6cb;",
-        "5": "background-color: #f8d7da;", // Red
-        "Yes": "background-color: #d4edda;",
-        "No": "background-color: #f8d7da;",
-        "2": "background-color: #d4edda;",
-        "1": "background-color: #ffeeba;",
-        "0": "background-color: #f8d7da;"
-    };
-    return colors[value] || "";
 }
 
 function createNumericInput(value, index, field, disabled) {
@@ -64,6 +49,7 @@ function createNumericInput(value, index, field, disabled) {
 }
 
 function displayWeapons() {
+    console.time("displayWeapons");
     const tableBody = document.getElementById("weaponTable");
     tableBody.innerHTML = "";
     weaponsData.forEach((weapon, index) => {
@@ -84,26 +70,33 @@ function displayWeapons() {
         row.appendChild(editButton);
         tableBody.appendChild(row);
     });
+    console.timeEnd("displayWeapons");
 }
 
 function markRowAsEdited(index, field, value) {
+    console.time("markRowAsEdited");
     weaponsData[index][field] = value;
+    console.timeEnd("markRowAsEdited");
 }
 
 function toggleEditRow(index) {
+    console.time("toggleEditRow");
     if (editStates[index]) {
         localStorage.setItem("weaponsData", JSON.stringify(weaponsData));
     }
     editStates[index] = !editStates[index];
     displayWeapons();
+    console.timeEnd("toggleEditRow");
 }
 
 function searchWeapons() {
+    console.time("searchWeapons");
     let searchValue = document.getElementById("search").value.toLowerCase();
     let filteredWeapons = weaponsData.filter(weapon =>
         weapon.Weapon.toLowerCase().includes(searchValue)
     );
     displayWeapons(filteredWeapons);
+    console.timeEnd("searchWeapons");
 }
 
 window.onload = loadWeapons;
