@@ -1,15 +1,12 @@
-body, html {
+* {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevents any horizontal scrolling issues */
+    border: 0;
+    box-sizing: border-box;
 }
 
-.table-container {
-    background: url('images/background.png') no-repeat center center;
-    background-size: cover;
-    padding: 20px;
-    min-height: 100vh;
-    backdrop-filter: blur(5px);
+body, html {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
 #header {
@@ -20,27 +17,43 @@ body, html {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background: none; /* Remove any solid background */
-    padding: 0; /* Remove any padding that might cause extra spacing */
-    border: none; /* Ensure there's no border */
+    padding: 0;
+    border: none;
+    margin: 0;
 }
 
+/* 3️⃣ Ensure Header Image Fully Covers */
 #header-img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures image scales correctly */
-    display: block; /* Removes any extra spacing from inline display */
-    margin: 0;
-    padding: 0;
-    border: none; /* Make sure no border exists */
+    object-fit: cover;
+    display: block;
 }
+
+.table-container {
+    background: url('images/background.png') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    min-height: 100vh;
+    backdrop-filter: blur(5px);
+}
+
 
 #search-container {
     position: absolute;
-    bottom: 5%; /* Keeps it inside the image */
+    bottom: 5%;
     width: 50%;
     display: flex;
     justify-content: center;
+}
+
+#table-container {
+    width: 100%;
+    height: 70vh;
+    background: url('images/background.png') no-repeat center center fixed;
+    background-size: cover;
+    padding: 20px;
+    overflow-y: auto; /* Allows scrolling if table overflows */
 }
 
 #search {
@@ -61,32 +74,21 @@ body, html {
     border: 2px solid white;
 }
 
-
-#table-container {
-    width: 100%;
-    height: 70vh; /* Bottom 70% of the viewport */
-    background: url('images/background.png') no-repeat center center fixed;
-    background-size: cover;
-    padding: 20px;
-    overflow-y: auto; /* Allows scrolling if table overflows */
-}
-
 table {
     width: 90%;
     margin: auto;
     border-collapse: collapse;
-    background: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+    background: rgba(0, 0, 0, 0.8);
     color: white;
 }
 
 th, td {
     text-align: center;
-    font-size: 16px; /* Increase readability */
-    padding: 8px; /* More padding for better spacing */
-    background: rgba(20, 20, 20, 0.9); /* Darker background for better text contrast */
-    border: 1px solid rgba(255, 255, 255, 0.4); /* Lighter borders */
-    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.1); /* Soft glow effect */
-    color: white;
+    font-size: 16px;
+    padding: 8px;
+    background: rgba(20, 20, 20, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: none; /* Ensures no weird glow effects */
 }
 
 th {
