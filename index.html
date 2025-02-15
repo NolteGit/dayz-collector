@@ -124,6 +124,10 @@
             return select;
         }
 
+        function createNumericInput(value, index, field) {
+            return `<input type="number" min="0" max="999999" value="${value || ''}" onchange="updateWeapon(${index}, '${field}', this.value)">`;
+        }
+
         function displayWeapons(data) {
             const tableBody = document.getElementById("weaponTable");
             tableBody.innerHTML = "";
@@ -134,6 +138,8 @@
                     <td class="small-column">${createDropdown(noiseLevels, weapon.Noise || 'N/A', index, 'Noise')}</td>
                     <td class="small-column">${createDropdown(storageOptions, weapon.Lager || 'N/A', index, 'Lager')}</td>
                     <td class="small-column">${createDropdown(magazineOptions, weapon.Mag || 'N/A', index, 'Mag')}</td>
+                    <td class="small-column">${createNumericInput(weapon.Buy, index, 'Buy')}</td>
+                    <td class="small-column">${createNumericInput(weapon.Sell, index, 'Sell')}</td>
                     <td class="small-column">${createDropdown(weaponTypes, weapon.Type || 'Other', index, 'Type')}</td>
                 </tr>`;
                 tableBody.innerHTML += row;
