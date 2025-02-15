@@ -92,7 +92,14 @@ function displayWeapons(data) {
 
     data.forEach((weapon, index) => {
         let isEditable = editStates[index] || false;
+        
+        // Create row container (flex container for row + button)
+        let rowContainer = document.createElement("div");
+        rowContainer.className = "row-container";
+
+        // Create table row
         let row = document.createElement("tr");
+        row.className = "weapon-row";
 
         // Creating table cells
         let weaponCell = document.createElement("td");
@@ -109,19 +116,17 @@ function displayWeapons(data) {
         row.appendChild(createDropdown(weaponTypes, weapon.Type || 'N/A', index, 'Type', !isEditable));
         row.appendChild(createDropdown(ratingOptions, weapon.Rating || 'N/A', index, 'Rating', !isEditable));
 
-        tableBody.appendChild(row); // Append row to table
-
-        let editWrapper = document.createElement("div");
-        editWrapper.className = "edit-wrapper";
-
+        // Create Edit Button
         let editButton = document.createElement("button");
         editButton.className = "edit-btn";
         editButton.textContent = isEditable ? "✔" : "✏";
         editButton.onclick = () => toggleEditRow(index);
 
-        editWrapper.appendChild(editButton);
+        // Add row and button to row container
+        rowContainer.appendChild(row);
+        rowContainer.appendChild(editButton);
 
-        row.insertAdjacentElement("afterend", editWrapper);
+        tableBody.appendChild(rowContainer);
     });
 
     console.timeEnd("displayWeapons");

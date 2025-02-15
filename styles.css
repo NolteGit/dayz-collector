@@ -148,23 +148,32 @@ input[type="number"]::-webkit-inner-spin-button {
     margin: 0;
 }
 
-/* Style for the Edit Button */
-.edit-wrapper {
+/* Make row container flexbox to align row & button */
+.row-container {
     display: flex;
-    justify-content: center;
     align-items: center;
-    position: absolute; /* Ensures button stays outside the table */
-    margin-left: -40px; /* Adjust spacing next to table */
+    justify-content: space-between; /* Ensures button stays on the right */
+    position: relative;
+    width: 100%;
 }
 
+/* Ensures the table row takes full width */
+.weapon-row {
+    flex-grow: 1;
+}
+
+/* Position Edit Button to the Right */
 .edit-btn {
-    background-color: #f1c40f; /* Yellow for visibility */
+    background-color: #f1c40f;
     color: black;
     border: none;
     padding: 6px 10px;
     font-size: 14px;
     cursor: pointer;
     border-radius: 5px;
+    margin-left: 10px; /* Space between row & button */
+    position: absolute;
+    right: 10px; /* Move to the right */
 }
 
 .edit-btn:hover {
