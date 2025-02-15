@@ -148,7 +148,15 @@ input[type="number"]::-webkit-inner-spin-button {
     margin: 0;
 }
 
-.edit-button {
+.edit-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -36px; /* Move it up to align with the row */
+    margin-left: 5px;
+}
+
+.edit-btn {
     background-color: #f1c40f; /* Yellow button */
     color: black;
     border: none;
@@ -156,9 +164,8 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 14px;
     cursor: pointer;
     border-radius: 5px;
-    margin-left: 10px;
 }
 
-.edit-button:hover {
-    background-color: #ffcc00; /* Slightly brighter on hover */
+.edit-btn:hover {
+    background-color: #ffcc00;
 }

@@ -30,7 +30,7 @@ async function loadWeapons() {
 
 function getDropdownColor(field, value) {
     if (value === "N/A") return ""; // Prevents coloring "N/A"
-    
+
     const colors = {
         // Noise Levels
         "1": "background-color: #4caf50; color: white;",  // Gray
@@ -89,13 +89,17 @@ function displayWeapons(data) {
     console.time("displayWeapons");
     const tableBody = document.getElementById("weaponTable");
     tableBody.innerHTML = "";
+
     data.forEach((weapon, index) => {
         let isEditable = editStates[index] || false;
         let row = document.createElement("tr");
+
+        // Creating table cells
         let weaponCell = document.createElement("td");
         weaponCell.textContent = weapon.Weapon;
         weaponCell.className = "weapon-column";
         row.appendChild(weaponCell);
+
         row.appendChild(createDropdown(ammoTypes, weapon.Ammo || 'N/A', index, 'Ammo', !isEditable));
         row.appendChild(createDropdown(noiseLevels, weapon.Noise || 'N/A', index, 'Noise', !isEditable));
         row.appendChild(createDropdown(storageOptions, weapon.Lager || 'N/A', index, 'Lager', !isEditable));
@@ -104,20 +108,25 @@ function displayWeapons(data) {
         row.appendChild(createNumericInput(weapon.Sell, index, 'Sell', !isEditable));
         row.appendChild(createDropdown(weaponTypes, weapon.Type || 'N/A', index, 'Type', !isEditable));
         row.appendChild(createDropdown(ratingOptions, weapon.Rating || 'N/A', index, 'Rating', !isEditable));
-        
-        let editTd = document.createElement("td");
-        editTd.style.width = "50px";
+
+        // Append the row to the table
+        tableBody.appendChild(row);
+
         let editButton = document.createElement("button");
         editButton.className = "edit-btn";
         editButton.textContent = isEditable ? "✔" : "✏";
         editButton.onclick = () => toggleEditRow(index);
-        editTd.appendChild(editButton);
-        row.appendChild(editTd);
-        
-        tableBody.appendChild(row);
+
+        let editWrapper = document.createElement("div");
+        editWrapper.className = "edit-wrapper";
+        editWrapper.appendChild(editButton);
+
+        row.insertAdjacentElement("afterend", editWrapper);
     });
+
     console.timeEnd("displayWeapons");
 }
+
 
 function markRowAsEdited(index, field, value) {
     weaponsData[index][field] = value;
