@@ -162,23 +162,28 @@ input[type="number"]::-webkit-inner-spin-button {
     flex-grow: 1;
 }
 
-/* Ensures edit column is at the right */
+/* Reduce width of the Edit column */
 .edit-column {
     text-align: right;
-    width: 20px;
+    width: 40px; /* Reduce column width */
+    padding: 5px; /* Adjust padding */
 }
 
-/* Style for the Edit Button */
+/* Compact Edit Button */
 .edit-btn {
     background-color: #f1c40f; /* Yellow button */
     color: black;
     border: none;
-    padding: 6px 10px;
-    font-size: 14px;
+    padding: 4px 6px; /* Smaller padding */
+    font-size: 12px; /* Reduce font size */
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+/* Hover effect */
 .edit-btn:hover {
     background-color: #ffcc00;
 }
