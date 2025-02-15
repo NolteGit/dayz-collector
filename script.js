@@ -9,16 +9,21 @@ let editStates = {};
 
 async function loadWeapons() {
     console.time("loadWeapons");
-    const savedData = localStorage.getItem("weaponsData");
-    if (savedData) {
-        weaponsData = JSON.parse(savedData);
-    } else {
-        const response = await fetch('dayz_weapons.json');
-        weaponsData = await response.json();
-        localStorage.setItem("weaponsData", JSON.stringify(weaponsData));
+    try {
+        const savedData = localStorage.getItem("weaponsData");
+        if (savedData) {
+            weaponsData = JSON.parse(savedData);
+        } else {
+            const response = await fetch('dayz_weapons.json');
+            if (!response.ok) throw new Error("Failed to load weapons data");
+            weaponsData = await response.json();
+            localStorage.setItem("weaponsData", JSON.stringify(weaponsData));
+        }
+        displayWeapons(weaponsData);
+    } catch (error) {
+        console.error("Error loading weapons:", error);
     }
     console.timeEnd("loadWeapons");
-    displayWeapons(weaponsData);
 }
 
 function createDropdown(options, selectedValue, index, field, disabled) {
@@ -117,4 +122,6 @@ document.getElementById("search").addEventListener("input", () => {
     window.searchTimeout = setTimeout(searchWeapons, 200);
 });
 
-window.onload = loadWeapons;
+document.addEventListener("DOMContentLoaded", () => {
+    loadWeapons();
+});
