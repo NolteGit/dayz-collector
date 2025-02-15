@@ -18,7 +18,7 @@ async function loadWeapons() {
         localStorage.setItem("weaponsData", JSON.stringify(weaponsData));
     }
     console.timeEnd("loadWeapons");
-    displayWeapons();
+    displayWeapons(weaponsData);
 }
 
 function createDropdown(options, selectedValue, index, field, disabled) {
@@ -26,6 +26,7 @@ function createDropdown(options, selectedValue, index, field, disabled) {
     select.className = `dropdown ${field}`;
     select.onchange = () => markRowAsEdited(index, field, select.value);
     select.disabled = disabled;
+    select.style = getDropdownColor(field, selectedValue);
     
     options.forEach(option => {
         let optionElement = document.createElement("option");
@@ -35,6 +36,22 @@ function createDropdown(options, selectedValue, index, field, disabled) {
         select.appendChild(optionElement);
     });
     return select;
+}
+
+function getDropdownColor(field, value) {
+    const colors = {
+        "1": "background-color: #d4edda;", // Green
+        "2": "background-color: #c3e6cb;",
+        "3": "background-color: #ffeeba;", // Yellow
+        "4": "background-color: #f5c6cb;",
+        "5": "background-color: #f8d7da;", // Red
+        "Yes": "background-color: #d4edda;",
+        "No": "background-color: #f8d7da;",
+        "2": "background-color: #d4edda;",
+        "1": "background-color: #ffeeba;",
+        "0": "background-color: #f8d7da;"
+    };
+    return colors[value] || "";
 }
 
 function createNumericInput(value, index, field, disabled) {
@@ -48,11 +65,11 @@ function createNumericInput(value, index, field, disabled) {
     return input;
 }
 
-function displayWeapons() {
+function displayWeapons(data) {
     console.time("displayWeapons");
     const tableBody = document.getElementById("weaponTable");
     tableBody.innerHTML = "";
-    weaponsData.forEach((weapon, index) => {
+    data.forEach((weapon, index) => {
         let isEditable = editStates[index] || false;
         let row = document.createElement("tr");
         row.innerHTML = `<td class='weapon-column'>${weapon.Weapon}</td>`;
@@ -74,19 +91,15 @@ function displayWeapons() {
 }
 
 function markRowAsEdited(index, field, value) {
-    console.time("markRowAsEdited");
     weaponsData[index][field] = value;
-    console.timeEnd("markRowAsEdited");
 }
 
 function toggleEditRow(index) {
-    console.time("toggleEditRow");
     if (editStates[index]) {
         localStorage.setItem("weaponsData", JSON.stringify(weaponsData));
     }
     editStates[index] = !editStates[index];
-    displayWeapons();
-    console.timeEnd("toggleEditRow");
+    displayWeapons(weaponsData);
 }
 
 function searchWeapons() {
@@ -98,5 +111,10 @@ function searchWeapons() {
     displayWeapons(filteredWeapons);
     console.timeEnd("searchWeapons");
 }
+
+document.getElementById("search").addEventListener("input", () => {
+    clearTimeout(window.searchTimeout);
+    window.searchTimeout = setTimeout(searchWeapons, 200);
+});
 
 window.onload = loadWeapons;
