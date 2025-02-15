@@ -109,16 +109,16 @@ function displayWeapons(data) {
         row.appendChild(createDropdown(weaponTypes, weapon.Type || 'N/A', index, 'Type', !isEditable));
         row.appendChild(createDropdown(ratingOptions, weapon.Rating || 'N/A', index, 'Rating', !isEditable));
 
-        // Append the row to the table
-        tableBody.appendChild(row);
+        tableBody.appendChild(row); // Append row to table
+
+        let editWrapper = document.createElement("div");
+        editWrapper.className = "edit-wrapper";
 
         let editButton = document.createElement("button");
         editButton.className = "edit-btn";
         editButton.textContent = isEditable ? "✔" : "✏";
         editButton.onclick = () => toggleEditRow(index);
 
-        let editWrapper = document.createElement("div");
-        editWrapper.className = "edit-wrapper";
         editWrapper.appendChild(editButton);
 
         row.insertAdjacentElement("afterend", editWrapper);
@@ -126,6 +126,7 @@ function displayWeapons(data) {
 
     console.timeEnd("displayWeapons");
 }
+
 
 
 function markRowAsEdited(index, field, value) {

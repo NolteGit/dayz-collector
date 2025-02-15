@@ -148,19 +148,20 @@ input[type="number"]::-webkit-inner-spin-button {
     margin: 0;
 }
 
+/* Style for the Edit Button */
 .edit-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -36px; /* Move it up to align with the row */
-    margin-left: 5px;
+    position: absolute; /* Ensures button stays outside the table */
+    margin-left: -40px; /* Adjust spacing next to table */
 }
 
 .edit-btn {
-    background-color: #f1c40f; /* Yellow button */
+    background-color: #f1c40f; /* Yellow for visibility */
     color: black;
     border: none;
-    padding: 5px 10px;
+    padding: 6px 10px;
     font-size: 14px;
     cursor: pointer;
     border-radius: 5px;
