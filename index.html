@@ -4,72 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DayZ Weapon Tracker</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            text-align: center;
-        }
-        #search-container {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-        #search {
-            width: 40%;
-            padding: 10px;
-            font-size: 16px;
-            border-radius: 20px;
-            border: 1px solid #ccc;
-            text-align: center;
-        }
-        table {
-            width: 90%;
-            margin: auto;
-            border-collapse: collapse;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 6px;
-            text-align: center;
-            font-size: 14px;
-        }
-        th {
-            background-color: #f4f4f4;
-        }
-        .small-column {
-            width: 8%;
-        }
-        .weapon-column {
-            width: 20%;
-        }
-        select, input {
-            width: 90%;
-            font-size: 14px;
-            padding: 4px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        input[type="number"] {
-            -moz-appearance: textfield;
-        }
-        input[type="number"]::-webkit-outer-spin-button,
-        input[type="number"]::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-        .noise-1 { background-color: #d4edda; } /* Green */
-        .noise-2 { background-color: #c3e6cb; }
-        .noise-3 { background-color: #ffeeba; }
-        .noise-4 { background-color: #f5c6cb; }
-        .noise-5 { background-color: #f8d7da; } /* Red */
-        .storage-yes { background-color: #d4edda; } /* Green */
-        .storage-no { background-color: #f8d7da; } /* Red */
-        .mag-0 { background-color: #f8d7da; } /* Red */
-        .mag-1 { background-color: #ffeeba; }
-        .mag-2 { background-color: #d4edda; } /* Green */
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h2>DayZ Weapon Collection Tracker</h2>
@@ -93,73 +28,6 @@
             <!-- Weapons will be populated here -->
         </tbody>
     </table>
-
-    <script>
-        const ammoTypes = [".30-06 (7.62x73)", ".338 Lapua", "20x102mm", "46x30mm", ".408 CheyTac", ".44 Mag", "57x28mm", "6x35mm", "5.56x45mm", ".50 BMG", ".30 Carbine", "7.62x39mm", "7.62x25mm", "7.62x54mm", ".308 Win", ".300 Win Mag", "7.92x57", ".500 S&W", "5.45x39mm", "9x19mm", "12ga", ".45 ACP", ".40 S&W"];
-        const storageOptions = ["Yes", "No"];
-        const noiseLevels = ["1", "2", "3", "4", "5"];
-        const magazineOptions = ["0", "1", "2"];
-        const weaponTypes = ["AR", "Sniper", "Shotgun", "Pistol", "SMG", "Other"];
-
-        let weaponsData = [];
-
-        async function loadWeapons() {
-            const savedData = localStorage.getItem("weaponsData");
-            if (savedData) {
-                weaponsData = JSON.parse(savedData);
-            } else {
-                const response = await fetch('dayz_weapons.json');
-                weaponsData = await response.json();
-                localStorage.setItem("weaponsData", JSON.stringify(weaponsData));
-            }
-            displayWeapons(weaponsData);
-        }
-
-        function createDropdown(options, selectedValue, index, field) {
-            let select = `<select onchange="updateWeapon(${index}, '${field}', this.value)">`;
-            options.forEach(option => {
-                select += `<option value="${option}" ${option === selectedValue ? 'selected' : ''}>${option}</option>`;
-            });
-            select += `</select>`;
-            return select;
-        }
-
-        function createNumericInput(value, index, field) {
-            return `<input type="number" min="0" max="999999" value="${value || ''}" onchange="updateWeapon(${index}, '${field}', this.value)">`;
-        }
-
-        function displayWeapons(data) {
-            const tableBody = document.getElementById("weaponTable");
-            tableBody.innerHTML = "";
-            data.forEach((weapon, index) => {
-                let row = `<tr>
-                    <td class="weapon-column">${weapon.Weapon}</td>
-                    <td class="small-column">${createDropdown(ammoTypes, weapon.Ammo || 'N/A', index, 'Ammo')}</td>
-                    <td class="small-column">${createDropdown(noiseLevels, weapon.Noise || 'N/A', index, 'Noise')}</td>
-                    <td class="small-column">${createDropdown(storageOptions, weapon.Lager || 'N/A', index, 'Lager')}</td>
-                    <td class="small-column">${createDropdown(magazineOptions, weapon.Mag || 'N/A', index, 'Mag')}</td>
-                    <td class="small-column">${createNumericInput(weapon.Buy, index, 'Buy')}</td>
-                    <td class="small-column">${createNumericInput(weapon.Sell, index, 'Sell')}</td>
-                    <td class="small-column">${createDropdown(weaponTypes, weapon.Type || 'Other', index, 'Type')}</td>
-                </tr>`;
-                tableBody.innerHTML += row;
-            });
-        }
-
-        function searchWeapons() {
-            let searchValue = document.getElementById("search").value.toLowerCase();
-            let filteredWeapons = weaponsData.filter(weapon =>
-                weapon.Weapon.toLowerCase().includes(searchValue)
-            );
-            displayWeapons(filteredWeapons);
-        }
-
-        function updateWeapon(index, field, value) {
-            weaponsData[index][field] = value;
-            localStorage.setItem("weaponsData", JSON.stringify(weaponsData));
-        }
-
-        window.onload = loadWeapons;
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+#search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#search {
+    width: 40%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 6px;
+    text-align: center;
+    font-size: 14px;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+.small-column {
+    width: 8%;
+}
+
+.weapon-column {
+    width: 20%;
+}
+
+select, input {
+    width: 90%;
+    font-size: 14px;
+    padding: 4px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.noise-1 { background-color: #d4edda; } /* Green */
+.noise-2 { background-color: #c3e6cb; }
+.noise-3 { background-color: #ffeeba; }
+.noise-4 { background-color: #f5c6cb; }
+.noise-5 { background-color: #f8d7da; } /* Red */
+
+.storage-yes { background-color: #d4edda; } /* Green */
+.storage-no { background-color: #f8d7da; } /* Red */
+
+.mag-0 { background-color: #f8d7da; } /* Red */
+.mag-1 { background-color: #ffeeba; }
+.mag-2 { background-color: #d4edda; } /* Green */
