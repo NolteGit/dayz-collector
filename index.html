@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DayZ Weapon Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h2>DayZ Weapon Collection Tracker</h2>
+    <input type="text" id="search" placeholder="Search for a weapon..." onkeyup="searchWeapons()">
+    <table>
+        <thead>
+            <tr>
+                <th>Weapon Name</th>
+                <th>Ammo Type</th>
+                <th>Noise</th>
+                <th>In Storage</th>
+                <th>Magazines</th>
+                <th>Buy Price</th>
+                <th>Sell Price</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody id="weaponTable">
+            <!-- Weapons will be populated here -->
+        </tbody>
+    </table>
+
+    <script>
+        let weaponsData = [];
+
+        async function loadWeapons() {
+            const response = await fetch('dayz_weapons.json');
+            weaponsData = await response.json();
+            displayWeapons(weaponsData);
+        }
+
+        function displayWeapons(data) {
+            const tableBody = document.getElementById("weaponTable");
+            tableBody.innerHTML = "";
+            data.forEach(weapon => {
+                let row = `<tr>
+                    <td>${weapon.Weapon}</td>
+                    <td>${weapon.Ammo || 'N/A'}</td>
+                    <td>${weapon.Noise || 'N/A'}</td>
+                    <td>${weapon.Lager || 'N/A'}</td>
+                    <td>${weapon.Mag || 'N/A'}</td>
+                    <td>${weapon.Buy || 'N/A'}</td>
+                    <td>${weapon.Sell || 'N/A'}</td>
+                    <td>${weapon.Type}</td>
+                </tr>`;
+                tableBody.innerHTML += row;
+            });
+        }
+
+        function searchWeapons() {
+            let searchValue = document.getElementById("search").value.toLowerCase();
+            let filteredWeapons = weaponsData.filter(weapon =>
+                weapon.Weapon.toLowerCase().includes(searchValue)
+            );
+            displayWeapons(filteredWeapons);
+        }
+
+        window.onload = loadWeapons;
+    </script>
+</body>
+</html>
