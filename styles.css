@@ -162,27 +162,25 @@ input[type="number"]::-webkit-inner-spin-button {
     flex-grow: 1;
 }
 
-/* Make the edit column smaller */
+/* Force edit column width to match dropdowns */
 .edit-column {
     text-align: center;
-    width: 30px !important; /* Force a smaller width */
-    min-width: 30px;
-    max-width: 40px;
+    width: 80px !important; /* Same as other dropdown fields */
+    min-width: 80px;
+    max-width: 80px;
     padding: 2px;
 }
 
+/* Reduce the button size to fit better */
 .edit-btn {
     background-color: #f1c40f;
     color: black;
     border: none;
-    padding: 3px 5px; /* Smaller padding */
+    padding: 3px 5px; /* Adjusted padding */
     font-size: 12px; /* Smaller text */
     cursor: pointer;
     border-radius: 4px;
-    width: 100%; /* Ensures button fits inside small column */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%; /* Ensures it doesn't stretch beyond column */
     text-align: center;
 }
 
