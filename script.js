@@ -26,6 +26,22 @@ async function loadWeapons() {
     console.timeEnd("loadWeapons");
 }
 
+function getDropdownColor(field, value) {
+    const colors = {
+        "1": "background-color: #d4edda;", // Green
+        "2": "background-color: #c3e6cb;",
+        "3": "background-color: #ffeeba;", // Yellow
+        "4": "background-color: #f5c6cb;",
+        "5": "background-color: #f8d7da;", // Red
+        "Yes": "background-color: #d4edda;",
+        "No": "background-color: #f8d7da;",
+        "2": "background-color: #d4edda;",
+        "1": "background-color: #ffeeba;",
+        "0": "background-color: #f8d7da;"
+    };
+    return colors[value] || "";
+}
+
 function createDropdown(options, selectedValue, index, field, disabled) {
     let select = document.createElement("select");
     select.className = `dropdown ${field}`;
