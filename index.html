@@ -41,6 +41,14 @@
         .small-column {
             width: 10%;
         }
+        .editable {
+            cursor: pointer;
+            background-color: #f9f9f9;
+        }
+        .editable:focus {
+            outline: none;
+            background-color: #fff3c4;
+        }
     </style>
 </head>
 <body>
@@ -70,23 +78,30 @@
         let weaponsData = [];
 
         async function loadWeapons() {
-            const response = await fetch('dayz_weapons.json');
-            weaponsData = await response.json();
-            displayWeapons(weaponsData);
+            const savedData = localStorage.getItem("weaponsData");
+            if (savedData) {
+                weaponsData = JSON.parse(savedData);
+                displayWeapons(weaponsData);
+            } else {
+                const response = await fetch('dayz_weapons.json');
+                weaponsData = await response.json();
+                localStorage.setItem("weaponsData", JSON.stringify(weaponsData));
+                displayWeapons(weaponsData);
+            }
         }
 
         function displayWeapons(data) {
             const tableBody = document.getElementById("weaponTable");
             tableBody.innerHTML = "";
-            data.forEach(weapon => {
+            data.forEach((weapon, index) => {
                 let row = `<tr>
                     <td>${weapon.Weapon}</td>
-                    <td class="small-column">${weapon.Ammo || 'N/A'}</td>
-                    <td class="small-column">${weapon.Noise || 'N/A'}</td>
-                    <td class="small-column">${weapon.Lager || 'N/A'}</td>
-                    <td class="small-column">${weapon.Mag || 'N/A'}</td>
-                    <td class="small-column">${weapon.Buy || 'N/A'}</td>
-                    <td class="small-column">${weapon.Sell || 'N/A'}</td>
+                    <td class="small-column editable" contenteditable="true" onBlur="updateWeapon(${index}, 'Ammo', this.innerText)">${weapon.Ammo || 'N/A'}</td>
+                    <td class="small-column editable" contenteditable="true" onBlur="updateWeapon(${index}, 'Noise', this.innerText)">${weapon.Noise || 'N/A'}</td>
+                    <td class="small-column editable" contenteditable="true" onBlur="updateWeapon(${index}, 'Lager', this.innerText)">${weapon.Lager || 'N/A'}</td>
+                    <td class="small-column editable" contenteditable="true" onBlur="updateWeapon(${index}, 'Mag', this.innerText)">${weapon.Mag || 'N/A'}</td>
+                    <td class="small-column editable" contenteditable="true" onBlur="updateWeapon(${index}, 'Buy', this.innerText)">${weapon.Buy || 'N/A'}</td>
+                    <td class="small-column editable" contenteditable="true" onBlur="updateWeapon(${index}, 'Sell', this.innerText)">${weapon.Sell || 'N/A'}</td>
                     <td class="small-column">${weapon.Type}</td>
                 </tr>`;
                 tableBody.innerHTML += row;
@@ -99,6 +114,11 @@
                 weapon.Weapon.toLowerCase().includes(searchValue)
             );
             displayWeapons(filteredWeapons);
+        }
+
+        function updateWeapon(index, field, value) {
+            weaponsData[index][field] = value;
+            localStorage.setItem("weaponsData", JSON.stringify(weaponsData));
         }
 
         window.onload = loadWeapons;
